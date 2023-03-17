@@ -1,0 +1,55 @@
+.navbar{
+    background: linear-gradient(to right, #1F4071, #C92A27 );
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-icon span {
+    display: flex;
+    justify-content: right;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    box-shadow: 0px 2px 2px 0px black;
+  }
+
+.banner {
+    width : 100%;
+    max-height : auto;
+
+}
+
+h1 {
+	font-family: 'Rye', cursive;
+    font-size: 50px;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+h2 {
+    font-family: 'Rye', cursive;
+    font-size: 30px;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+}
+
+.portrait {
+    display: flex;
+    justify-content: center;
+}
+
