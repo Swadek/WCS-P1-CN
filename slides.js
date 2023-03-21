@@ -5,7 +5,6 @@
 /* /// Slide avec div boutons avec addEventListener à la 
 place de Onclick (Validé !) ///*/
 
-
 let slideIndex = 1;
 showDivs(slideIndex);
 function indexSlide(n) {
