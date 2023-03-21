@@ -28,21 +28,22 @@
     display: none;
 	position :fixed;
 	top: 0;
-    right: 0;
+    right: -100px;
 	width: 25vw;
-	height: 50vw;
+	height: 50%;
 	padding: 15px;
     background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
     border-radius: 15px 0px 0px 15px;
+    translate: -100px ;
+    transition-duration: 20ms;
 	
 }
 
-/* .sidenav.active {
-	transform: translateX(0);
-}  */
+
 
 .sidenav li {
 	list-style-type: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 
