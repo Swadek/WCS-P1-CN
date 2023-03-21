@@ -15,13 +15,11 @@
 #left2 {
   position: absolute;
   left: 5vw;
-  top: 50vh;
 }
 
 #right2 {
   position: absolute;
   right: 5vw;
-  top: 50vh;
 }
 
 .arrowRight2 {
