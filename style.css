@@ -185,15 +185,13 @@ button {
 }
 
 #left {
-  position: relative;
-  left: 5%;
-  top: 50%;
+  position: absolute;
+  left: 5vw;
 }
 
 #right {
-  position: relative;
-  right: 2%;
-  top: 50%;
+  position: absolute;
+  right: 5vw;
 }
 
 .arrowRight {
