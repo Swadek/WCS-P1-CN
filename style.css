@@ -10,7 +10,6 @@ body {
   min-height: 100%;
 }
 
-
 .navbar {
   background: linear-gradient(to right, #1F4071, #C92A27);
   display: flex;
@@ -46,7 +45,6 @@ body {
   translate: -100px;
   transition-duration: 0.5s;
 }
-
 
 .sidenav.deroule-menu {
   right: -230px;
@@ -135,10 +133,16 @@ body {
   justify-content: center;
 }
 
-/*  /// CSS - Pages 2 et 3 \\\  */
+/*  /// CSS Pages 2 et 3 \\\  */
 
 .containerPage2 {
-  margin: 0, auto;
+  margin-top: 20px;
+  border-top: 2px solid rgba(128, 128, 128, 0.288);
+}
+
+.containerPage3 {
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .containerContenu {
@@ -149,13 +153,13 @@ body {
   height: 100%;
 }
 
-.fondTransp {
+/* élément page 3 */
+.containerContenu2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(230, 228, 228, 0.4);
+  justify-content: center;
   height: 100%;
-  width: 100%;
 }
 
 .toggle {
@@ -169,19 +173,30 @@ body {
   font-weight: bolder;
 }
 
-.h1P2P3 {
+.h1StarMan {
   font-family: "Rye", cursive;
   font-size: 1.6em;
-  text-decoration: overline;
-  margin: 8vh 0 2% 0;
   text-decoration-line: underline overline;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.h1P2P3 {
+  font-family: "Rye", cursive;
+  font-size: 1.2em;
+  margin: 4vh 0 3% 0;
 }
 
 .h2P2P3 {
-  margin-top: 7%;
-  font-family: "Rye", cursive;
+  margin: 7% 0 18% 0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: #d8d6d6 1px 0 1px;
   font-size: 1em;
   width: 65%;
+}
+
+.slide:nth-child(4) p {
+  margin: 0;
 }
 
 button {
@@ -196,11 +211,27 @@ button {
 #left {
   position: absolute;
   left: 5vw;
+  top: 165vh;
 }
 
 #right {
   position: absolute;
   right: 5vw;
+  top: 165vh;
+}
+
+/* élément page 3 */
+#left2 {
+  position: absolute;
+  left: 5vw;
+  top: 278vh;
+}
+
+/* élément page 3 */
+#right2 {
+  position: absolute;
+  right: 5vw;
+  top: 278vh;
 }
 
 .arrowRight {
@@ -219,14 +250,62 @@ button {
   border-right: 20px solid #d9d9d9;
 }
 
+/* élément page 3 */
+.arrowRight2 {
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 20px solid #d9d9d9;
+}
+
+/* élément page 3 */
+.arrowLeft2 {
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 20px solid #d9d9d9;
+}
+
+.fondTransp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(230, 228, 228, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
 .slide {
   display: flex;
   flex-direction: column;
   text-align: center;
   background-image: url("/ressources/images/walkOfFame.jpg");
-  background-size: 100% 400px;
+  background-size: 100% 350px;
   background-repeat: no-repeat;
   height: 640px;
+}
+
+/* élément page 3 */
+.slide2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("/ressources/images/backgroudHomme.jpg");
+  background-size: 100% 350px;
+  background-repeat: no-repeat;
+  height: 640px;
+}
+
+/* élément page 3 */
+.slide2 {
+  display: none;
+}
+
+/* élément page 3 */
+.slide2.active {
+  display: block;
 }
 
 .slideImg {
@@ -235,9 +314,13 @@ button {
   border-radius: 5px;
 }
 
-.slide:nth-child(4) p {
-  margin-top: 15%;
+/* élément page 3 */
+.slideImg2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
 }
+
 
 /* PAGES 4 & 5 + BOUTON BACK TO TOP + MEDIA QUERIES PAGES 4 & 5 */
 
