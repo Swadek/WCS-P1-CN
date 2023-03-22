@@ -42,11 +42,9 @@ body {
   width: 30vw;
   height: 50%;
   padding: 15px;
-  background: linear-gradient(
-    270deg,
-    #c92a27 0%,
-    rgba(201, 42, 39, 0.75) 95.71%
-  );
+  background: linear-gradient(270deg,
+      #c92a27 0%,
+      rgba(201, 42, 39, 0.75) 95.71%);
   border-radius: 15px 0px 0px 15px;
   /* translate: -100px; */
   transition-duration: 0.5s;
@@ -144,6 +142,7 @@ body {
 
 .containerPage3 {
   margin-top: 20px;
+  border-top: 2px solid rgba(128, 128, 128, 0.288);
   overflow: hidden;
 }
 
@@ -288,6 +287,7 @@ button {
   background-repeat: no-repeat;
   height: 640px;
 }
+
 /* élément page 2 */
 .slide {
   display: none;
@@ -349,7 +349,7 @@ button {
   width: 100vw;
 }
 
-.page4 > h2 {
+.page4>h2 {
   display: flex;
   justify-content: center;
   padding: 5vh;
@@ -400,7 +400,9 @@ button {
   margin-bottom: 250px;
 }
 
-#facts1, #facts2, #facts3 {
+#facts1,
+#facts2,
+#facts3 {
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
@@ -519,6 +521,7 @@ button {
 }
 
 @media screen and (min-width: 960px) and (min-height: 925px) {
+
   /* PAGE 4 : FUN FACTS UNIQUEMENT */
   /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
   .page4 {
@@ -532,7 +535,7 @@ button {
     width: 100vw;
   }
 
-  .page4 > h2 {
+  .page4>h2 {
     margin-bottom: 0;
   }
 
