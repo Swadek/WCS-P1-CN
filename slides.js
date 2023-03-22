@@ -5,31 +5,31 @@
 /* /// Slide avec div boutons avec addEventListener à la 
 place de Onclick (Validé !) ///*/
 
-let slideIndex = 1;
-showDivs(slideIndex);
-function indexSlide(n) {
-    showDivs(slideIndex += n);
-}
+// let slideIndex = 1;
+// showDivs(slideIndex);
+// function indexSlide(n) {
+//     showDivs(slideIndex += n);
+// }
 
-const buttonLeft = document.getElementById("left");
-const buttonRight = document.getElementById("right");
+// const buttonLeft = document.getElementById("left");
+// const buttonRight = document.getElementById("right");
 
-buttonLeft.addEventListener('click', function () {
-    return indexSlide(1);
-});
-buttonRight.addEventListener('click', function () {
-    return indexSlide(-1)
-});
+// buttonLeft.addEventListener('click', function () {
+//     return indexSlide(1);
+// });
+// buttonRight.addEventListener('click', function () {
+//     return indexSlide(-1)
+// });
 
-function showDivs(n) {
-    let slideArray = document.getElementsByClassName("slide");
-    if (n > slideArray.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slideArray.length }
-    for (i = 0; i < slideArray.length; i++) {
-        slideArray[i].style.display = "none";
-    }
-    slideArray[slideIndex - 1].style.display = "flex";
-}
+// function showDivs(n) {
+//     let slideArray = document.getElementsByClassName("slide");
+//     if (n > slideArray.length) { slideIndex = 1 }
+//     if (n < 1) { slideIndex = slideArray.length }
+//     for (i = 0; i < slideArray.length; i++) {
+//         slideArray[i].style.display = "none";
+//     }
+//     slideArray[slideIndex - 1].style.display = "flex";
+// }
 /*
 let slideArray
 function mqSlides(x) {
