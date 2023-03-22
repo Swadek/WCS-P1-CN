@@ -12,91 +12,6 @@ body {
     min-height: 100%;
 }
 
-HEAD .navbar {
-    background: linear-gradient(to right, #1F4071, #C92A27);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-}
-
-
-.burger-icon {
-    padding: 5px 10px;
-    cursor: pointer;
-
-}
-
-.burger-icon span {
-    display: flex;
-    justify-content: right;
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    box-shadow: 0px 2px 2px 0px black;
-}
-
-.sidenav {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 25vw;
-    height: 50vw;
-    padding: 15px;
-    background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
-    border-radius: 15px 0px 0px 15px;
-
-}
-
-/* .sidenav.active {
-	transform: translateX(0);
-}  */
-
-.sidenav li {
-    list-style-type: none;
-}
-
-.banner {
-    width: 100%;
-    max-height: auto;
-
-}
-
-h1 {
-    font-family: 'Rye', cursive;
-    font-size: 7vw;
-    letter-spacing: 0.15rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
-}
-
-h2 {
-    font-family: 'Rye', cursive;
-    font-size: 4vw;
-    letter-spacing: 0.15rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 2rem;
-    line-height: 1.7rem;
-}
-
-.portrait {
-    display: flex;
-    justify-content: center;
-}
-
 .containerPage2 {
     margin: 0, auto;
 }
@@ -175,7 +90,7 @@ button {
     width: 100%;
 }
 
-.textP2P3 {
+.textP2 {
     margin: 15% 5% 0 5%;
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
@@ -186,7 +101,7 @@ button {
     margin-top: 9%;
 }
 
-.h1P2P3 {
+h1 {
     font-family: 'Rye', cursive;
     font-size: 1.6em;
     text-decoration: overline;
@@ -194,7 +109,7 @@ button {
     text-decoration-line: underline overline;
 }
 
-.h2P2P3 {
+h2 {
     margin-top: 7%;
     font-family: 'Rye', cursive;
     font-size: 1em;
