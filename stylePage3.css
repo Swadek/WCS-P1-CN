@@ -78,17 +78,3 @@ p {
   font-weight: bolder;
 }
 
-h1 {
-  font-family: "Rye", cursive;
-  font-size: 1.6em;
-  text-decoration: overline;
-  margin: 8vh 0 2% 0;
-  text-decoration-line: underline overline;
-}
-
-h2 {
-  margin-top: 7%;
-  font-family: "Rye", cursive;
-  font-size: 1em;
-  width: 65%;
-}
