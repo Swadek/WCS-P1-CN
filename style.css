@@ -19,6 +19,8 @@ body {
 }
 
 .burger-icon {
+  position:fixed;
+  right: 0px;
   padding: 5px 10px;
   cursor: pointer;
   z-index: 1;
@@ -36,20 +38,21 @@ body {
 
 .sidenav {
   position: fixed;
-  top: 0;
-  right: -100px;
-  width: 20vw;
+  top: 40px;
+  right: -120px;
+  width: 30vw;
   height: 50%;
   padding: 15px;
   background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
   border-radius: 15px 0px 0px 15px;
-  translate: -100px;
-  transition-duration: 0.5s;
+  /* translate: -100px; */
+  transition-duration: 0.5s; 
 }
 
 
 .sidenav.deroule-menu {
-  right: -230px;
+  /* right: -250px; */
+  translate: -120px;
   transition-duration: 0.5s;
 }
 
@@ -72,7 +75,7 @@ body {
   text-shadow: #FCFCFC 1px 0 1px;
 }
 
-.nav-link::after {
+/* .nav-link::after {
   content: "";
   display: block;
   height: 2px;
@@ -83,7 +86,7 @@ body {
 
 .nav-link:hover::after {
   transform: scale(1);
-}
+} */
 
 .img-vache {
 
@@ -104,29 +107,29 @@ body {
   font-size: 7vw;
   letter-spacing: 0.15rem;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 1.7rem;
+  margin-bottom: 2.5rem;
 
 }
 
 .Page1-titre-section {
   font-family: 'Rye', cursive;
-  font-size: 4vw;
+  font-size: 5vw;
   letter-spacing: 0.15rem;
   display: block;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 
 .biographie {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   line-height: 1.5rem;
 }
 
@@ -244,11 +247,12 @@ button {
 /* Page 4 : Fun Facts */
 
 .page4 {
+  background: linear-gradient(135deg, #1F4071, #C92A27);
   display: flex;
   flex-direction: column;
-  background-image: url("/ressources/images/separated_flag.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-image: url("/ressources/images/separated_flag.png"); */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   height: 100vh;
