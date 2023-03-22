@@ -310,6 +310,11 @@ button {
   margin-bottom: 250px;
 }
 
+#facts1, #facts2, #facts3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
 .containerFooterPage4 {
   display: none;
 }
@@ -429,6 +434,7 @@ button {
   /* PAGE 4 : FUN FACTS UNIQUEMENT */
   /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
   .page4 {
+    position: relative;
     background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
     background-attachment: fixed;
     background-position: center center;
@@ -519,7 +525,7 @@ button {
     width: 100vw;
     bottom: 0;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     opacity: 0.8;
     background: #f5cf95;
   }
@@ -529,8 +535,7 @@ button {
     margin: 0;
     padding-left: 10px;
     font-weight: bolder;
-    font-family: "Rye", cursive;
-    z-index: 2;
+    font-family: "Poppins", sans-serif;
   }
 
   .creditsPage4 {

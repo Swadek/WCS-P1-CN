@@ -14,7 +14,7 @@ function derouleBurger () {
 }
 
 // NB ALEATOIRE : FONCTIONNEL (jusqu'à 19)
-let num = () => Math.floor(Math.random()* 20);
+let num = () => Math.floor(Math.random()* quote.length);
 // UTILISER LE CONSOLE.LOG SUIVANT POUR TESTER LA FONCTION PRECEDENTE :
 //console.log(num());
 
@@ -47,3 +47,29 @@ const quote = [
 ];
 // UTILISER LE CONSOLE.LOG SUIVANT POUR TESTER LES FACTS EN ALEATOIRE :
 //console.log(quote[num()]);
+
+
+// BOUTON RANDOM FACTS
+// Appel de la classe bouton - des #id "Facts" 1, 2 & 3 :
+const another = document.querySelector('.another');
+const fact1 = document.querySelector('#facts1');
+const fact2 = document.querySelector('#facts2');
+const fact3 = document.querySelector('#facts3');
+
+// AddEventListener sur bouton :
+another.addEventListener('click', function() {
+// Création des variables "quote" pour stocker l'index et donc le Fact en question :
+  let quote1 = quote[num()];
+  let quote2 = quote[num()];
+  let quote3 = quote[num()];
+// Tant que les "quote" 1, 2 & 3 ont le même numéro d'index du tableau quote, on relance un numéro aléatoire :
+  while (quote1 === quote2 || quote1=== quote3 || quote2===quote3) {
+      quote1 = quote[num()];
+      quote2 = quote[num()];
+      quote3 = quote[num()];
+  }
+  // Modification de l'id "Facts" 1 à 3 dans le HTML :
+  fact1.innerHTML = quote1;
+  fact2.innerHTML = quote2;
+  fact3.innerHTML = quote3;
+})
