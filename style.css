@@ -10,11 +10,12 @@ body {
   min-height: 100%;
 }
 
-HEAD .navbar {
-  background: linear-gradient(to right, #1f4071, #c92a27);
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10px;
+
+.navbar {
+    background: linear-gradient(to right, #1F4071, #C92A27);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
 }
 
 .burger-icon {
@@ -34,20 +35,18 @@ HEAD .navbar {
 }
 
 .sidenav {
-  /* display: none; */
-  position: fixed;
-  top: 0;
-  right: -100px;
-  width: 20vw;
-  height: 50%;
-  padding: 15px;
-  background: linear-gradient(270deg,
-      #c92a27 0%,
-      rgba(201, 42, 39, 0.75) 95.71%);
-  border-radius: 15px 0px 0px 15px;
-  translate: -100px;
-  transition-duration: 0.5s;
+    position: fixed;
+    top: 0;
+    right: -100px;
+    width: 20vw;
+    height: 50%;
+    padding: 15px;
+    background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
+    border-radius: 15px 0px 0px 15px;
+    translate: -100px;
+    transition-duration: 0.5s;
 }
+
 
 .sidenav.deroule-menu {
   right: -230px;
@@ -61,13 +60,16 @@ HEAD .navbar {
 }
 
 .nav-link {
-  position: absolute;
-  color: #fcfcfc;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: #000000;
-  font-weight: bold;
-  text-shadow: #fcfcfc 1px 0 1px;
+
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #FCFCFC;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: #FCFCFC 1px 0 1px;
 }
 
 .nav-link::after {
@@ -84,10 +86,11 @@ HEAD .navbar {
 }
 
 .img-vache {
-  display: block;
-  width: 70%;
-  margin: auto;
-  margin-top: 30px;
+
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .banner {
@@ -95,31 +98,36 @@ HEAD .navbar {
   max-height: auto;
 }
 
-h1 {
-  font-family: "Rye", cursive;
-  font-size: 7vw;
-  letter-spacing: 0.15rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+
+.titre-principal {
+    font-family: 'Rye', cursive;
+    font-size: 7vw;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
 }
 
-h2 {
-  font-family: "Rye", cursive;
-  font-size: 4vw;
-  letter-spacing: 0.15rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.Page1-titre-section {
+    font-family: 'Rye', cursive;
+    font-size: 4vw;
+    letter-spacing: 0.15rem;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  margin-bottom: 2rem;
-  line-height: 1.5rem;
+
+.biographie {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    line-height: 1.5rem;
 }
 
 .portrait {
