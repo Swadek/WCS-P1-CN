@@ -310,6 +310,10 @@ button {
   margin-bottom: 250px;
 }
 
+.containerFooterPage4 {
+  display: none;
+}
+
 /* Bouton Back To Top */
 
 .button-random {
@@ -328,8 +332,10 @@ button {
 /* Page 5 : Not About Chuck */
 
 .page5 {
+  position: relative;
   display: flex;
   flex-flow: column;
+  justify-content: space-around;
   background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
   background-attachment: fixed;
   background-position: center center;
@@ -341,10 +347,9 @@ button {
 
 /* Titre */
 
-.page5>h2 {
+.page5-h2 {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   text-align: center;
   font-family: "Rye", cursive;
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
@@ -358,7 +363,6 @@ button {
   flex-flow: column;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
   background: rgba(211, 211, 211, 0.7);
   border-radius: 5px;
   justify-content: center;
@@ -379,16 +383,16 @@ button {
 
 /* Footer */
 
-.containerFooter {
+.containerFooterPage5 {
   width: 100vw;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   margin-top: initial;
   opacity: 0.8;
   background: #f5cf95;
 }
 
-.containerFooter p {
+.containerFooterPage5 p {
   color: rgba(0, 0, 0, 1);
   margin: 0;
   padding: 20px;
@@ -409,33 +413,30 @@ button {
   box-shadow: rgba(32, 32, 32, 1);
 }
 
+
+
 /* MEDIA SCREEN DESKTOP */
 
 @media screen and (min-width: 600px) {
   /* PAGE 5 : CREDITS ET SOURCES */
 
-  .page5>h2 {
-    margin-top: 5%;
-  }
-
-  .credits {
-    margin-top: 10vh;
-    width: 50vw;
-  }
-
-  .credits p {
-    line-height: 1.5pc;
-  }
-
-  .backToTop {
-    bottom: 15px;
-    right: 25px;
+  .page5 {
+  display: none;
   }
 }
 
 @media screen and (min-width: 960px) and (min-height: 925px) {
   /* PAGE 4 : FUN FACTS UNIQUEMENT */
   /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
+  .page4 {
+    background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
 
   .page4>h2 {
     margin-bottom: 0;
@@ -506,5 +507,34 @@ button {
 
   .button {
     display: none;
+  }
+
+  .backToTop {
+    display: none;
+  }
+
+  .containerFooterPage4 {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100vw;
+    bottom: 0;
+    padding: 10px;
+    position: fixed;
+    opacity: 0.8;
+    background: #f5cf95;
+  }
+  
+  .containerFooterPage4 p {
+    color: rgba(0, 0, 0, 1);
+    margin: 0;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-family: "Rye", cursive;
+    z-index: 2;
+  }
+
+  .creditsPage4 {
+    display: block;
+    padding-right: 10px;
   }
 }
