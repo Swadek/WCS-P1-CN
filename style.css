@@ -97,6 +97,8 @@ p {
     justify-content: center;
 }
 
+/*  /// CSS - Pages 2 et 3 \\\  */
+
 .containerPage2 {
     margin: 0, auto;
 }
@@ -113,16 +115,26 @@ p {
     display: none;
 }
 
-#left {
-    position: absolute;
-    left: 5vw;
-    top: 50vh;
+.textP2P3 {
+    margin: 15% 5% 0 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: bolder;
 }
 
-#right {
-    position: absolute;
-    right: 5vw;
-    top: 50vh;
+.h1P2P3 {
+    font-family: 'Rye', cursive;
+    font-size: 1.6em;
+    text-decoration: overline;
+    margin: 8vh 0 2% 0;
+    text-decoration-line: underline overline;
+}
+
+.h2P2P3 {
+    margin-top: 7%;
+    font-family: 'Rye', cursive;
+    font-size: 1em;
+    width: 65%;
 }
 
 button {
@@ -132,6 +144,18 @@ button {
     height: 5px;
     color: #fff;
     cursor: pointer;
+}
+
+#left {
+    position: relative;
+    left: 5%;
+    top: 50%;
+}
+
+#right {
+    position: relative;
+    right: 2%;
+    top: 50%;
 }
 
 .arrowRight {
@@ -166,6 +190,10 @@ button {
     border-radius: 5px;
 }
 
+.slide:nth-child(4) p {
+    margin-top: 9%;
+}
+
 .fondTransp {
     display: flex;
     flex-direction: column;
@@ -173,30 +201,4 @@ button {
     background-color: rgba(230, 228, 228, 0.4);
     height: 100%;
     width: 100%;
-}
-
-.textP2P3 {
-    margin: 15% 5% 0 5%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8em;
-    font-weight: bolder;
-}
-
-.slide:nth-child(4) p {
-    margin-top: 9%;
-}
-
-.h1P2P3 {
-    font-family: 'Rye', cursive;
-    font-size: 1.6em;
-    text-decoration: overline;
-    margin: 8vh 0 2% 0;
-    text-decoration-line: underline overline;
-}
-
-.h2P2P3 {
-    margin-top: 7%;
-    font-family: 'Rye', cursive;
-    font-size: 1em;
-    width: 65%;
 }
