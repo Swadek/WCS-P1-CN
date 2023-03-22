@@ -8,15 +8,27 @@
         height: 100vh;
         background: linear-gradient(#0D236F, #848484);
     }
+    .containerContenu.blue {
+        display: ;
 
+    .slide {
+        display: inline-block;
+        justify-content: space-between;
+    }
+    
     /* Elément page 3 */
     .containerContenu2 {
         flex-direction: row;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(#0D236F, #848484);
+        background: linear-gradient(#752220, #848484);
     }
 
+    .slide2 {
+        display: inline-block;
+        justify-content: space-between;
+    }
+    
     .toggle {
         margin: 0;
         padding: 0;
@@ -63,7 +75,13 @@
     .slideImg {
         width: 32vw;
         max-height: 25vh;
-        padding: 0 30% 0 30%;
+        padding: 0 20% 0 20%;
+    }
+    
+    .slideImg2 {
+        width: 32vw;
+        max-height: 25vh;
+        padding: 0 20% 0 20%;
     }
 
     .h1StarMan {
