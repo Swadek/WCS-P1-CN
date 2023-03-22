@@ -142,6 +142,7 @@ body {
 
 .containerPage3 {
   margin-top: 20px;
+  border-top: 2px solid rgba(128, 128, 128, 0.288);
   overflow: hidden;
   border-top: 2px solid rgba(128, 128, 128, 0.288);
 }
