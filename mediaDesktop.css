@@ -78,12 +78,14 @@
   }
 
   .slideImg {
+    object-fit: contain;
     width: 32vw;
     max-height: 25vh;
     padding: 0 20% 0 20%;
   }
 
   .slideImg2 {
+    object-fit: contain;
     width: 32vw;
     max-height: 25vh;
     padding: 0 20% 0 20%;
