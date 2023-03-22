@@ -302,7 +302,7 @@ button {
 
 /* Bouton Back To Top */
 
-.button {
+.button-random {
   display: flex;
   justify-content: center;
 }
