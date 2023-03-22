@@ -11,14 +11,14 @@ body {
 }
 
 .navbar {
-  background: linear-gradient(to right, #1F4071, #C92A27);
+  background: linear-gradient(to right, #1f4071, #c92a27);
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
 }
 
 .burger-icon {
-  position:fixed;
+  position: fixed;
   right: 0px;
   padding: 5px 10px;
   cursor: pointer;
@@ -42,10 +42,14 @@ body {
   width: 30vw;
   height: 50%;
   padding: 15px;
-  background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
+  background: linear-gradient(
+    270deg,
+    #c92a27 0%,
+    rgba(201, 42, 39, 0.75) 95.71%
+  );
   border-radius: 15px 0px 0px 15px;
   /* translate: -100px; */
-  transition-duration: 0.5s; 
+  transition-duration: 0.5s;
 }
 
 .sidenav.deroule-menu {
@@ -61,16 +65,15 @@ body {
 }
 
 .nav-link {
-
   position: absolute;
   padding-top: 15px;
   padding-bottom: 5px;
-  color: #FCFCFC;
+  color: #fcfcfc;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
   font-weight: bold;
-  text-shadow: #FCFCFC 1px 0 1px;
+  text-shadow: #fcfcfc 1px 0 1px;
 }
 
 /* .nav-link::after {
@@ -87,7 +90,6 @@ body {
 } */
 
 .img-vache {
-
   display: block;
   width: 70%;
   margin: auto;
@@ -99,19 +101,17 @@ body {
   max-height: auto;
 }
 
-
 .titre-principal {
-  font-family: 'Rye', cursive;
+  font-family: "Rye", cursive;
   font-size: 7vw;
   letter-spacing: 0.15rem;
   text-align: center;
   margin-top: 1.7rem;
   margin-bottom: 2.5rem;
-
 }
 
 .Page1-titre-section {
-  font-family: 'Rye', cursive;
+  font-family: "Rye", cursive;
   font-size: 5vw;
   letter-spacing: 0.15rem;
   display: block;
@@ -120,9 +120,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
-
 .biographie {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   margin-left: 4rem;
   margin-right: 4rem;
@@ -214,27 +213,27 @@ button {
 #left {
   position: absolute;
   left: 5vw;
-  top: 165vh;
+  /* top: 165vh; */
 }
 
 #right {
   position: absolute;
   right: 5vw;
-  top: 165vh;
+  /* top: 165vh; */
 }
 
 /* élément page 3 */
 #left2 {
   position: absolute;
   left: 5vw;
-  top: 278vh;
+  /* top: 278vh; */
 }
 
 /* élément page 3 */
 #right2 {
   position: absolute;
   right: 5vw;
-  top: 278vh;
+  /* top: 278vh; */
 }
 
 .arrowRight {
@@ -289,6 +288,15 @@ button {
   background-repeat: no-repeat;
   height: 640px;
 }
+/* élément page 2 */
+.slide {
+  display: none;
+}
+
+/* élément page 2 */
+.slide.active {
+  display: block;
+}
 
 /* élément page 3 */
 .slide2 {
@@ -324,13 +332,12 @@ button {
   border-radius: 5px;
 }
 
-
 /* PAGES 4 & 5 + BOUTON BACK TO TOP + MEDIA QUERIES PAGES 4 & 5 */
 
 /* Page 4 : Fun Facts */
 
 .page4 {
-  background: linear-gradient(135deg, #1F4071, #C92A27);
+  background: linear-gradient(135deg, #1f4071, #c92a27);
   display: flex;
   flex-direction: column;
   /* background-image: url("/ressources/images/separated_flag.png"); */
@@ -342,7 +349,7 @@ button {
   width: 100vw;
 }
 
-.page4>h2 {
+.page4 > h2 {
   display: flex;
   justify-content: center;
   padding: 5vh;
@@ -496,15 +503,13 @@ button {
   box-shadow: rgba(32, 32, 32, 1);
 }
 
-
-
 /* MEDIA SCREEN DESKTOP */
 
 @media screen and (min-width: 600px) {
   /* PAGE 5 : CREDITS ET SOURCES */
 
   .page5 {
-  display: none;
+    display: none;
   }
 }
 
@@ -521,7 +526,7 @@ button {
     width: 100vw;
   }
 
-  .page4>h2 {
+  .page4 > h2 {
     margin-bottom: 0;
   }
 
@@ -606,7 +611,7 @@ button {
     opacity: 0.8;
     background: #f5cf95;
   }
-  
+
   .containerFooterPage4 p {
     color: rgba(0, 0, 0, 1);
     margin: 0;
