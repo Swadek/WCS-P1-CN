@@ -1,14 +1,144 @@
-/* !!!       ATTENTION       !!! */
-/*----ELEMENT BODY A SUPPRIMER----*/
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    display: block;
+.navbar{
+    background: linear-gradient(to right, #1F4071, #C92A27 );
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
 }
 
 
+.burger-icon {
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.burger-icon spanPage1 {
+    display: flex;
+    justify-content: right;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    box-shadow: 0px 2px 2px 0px black;
+  }
+
+
+
+.sidenav {
+    /* display: none; */
+	position :fixed;
+	top: 0;
+    right: -100px;
+	width: 20vw;
+	height: 50%;
+	padding: 15px;
+    background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
+    border-radius: 15px 0px 0px 15px;
+    translate: -100px ; 
+    transition-duration: 0.5s; 
+   
+	
+}
+
+.sidenav.deroule-menu {
+    right: -230px;
+    transition-duration: 0.5s;
+}
+
+.sidenav li {
+	list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+
+.nav-link {
+    position:absolute;
+    color: #FCFCFC ;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: #FCFCFC 1px 0 1px;
+    
+}
+
+.nav-link::after{
+    content:"";
+    display:block;
+    height: 2px;
+    background: #2E2B2B;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out
+}
+
+.nav-link:hover::after{
+    transform: scale(1);
+}
+.img-vache {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.banner {
+    width : 100%;
+    max-height : auto;
+
+}
+
+h1 {
+	font-family: 'Rye', cursive;
+    font-size: 7vw;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+h2 {
+    font-family: 'Rye', cursive;
+    font-size: 4vw;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.portrait {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGES 4 & 5 + BOUTON BACK TO TOP + MEDIA QUERIES PAGES 4 & 5 */
+
+
 /* Page 4 : Fun Facts */
+
 
 .page4 {
     display: flex;

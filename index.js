@@ -1,3 +1,18 @@
+const burgerIcon = document.querySelector(".burger-icon");
+const sidenav = document.querySelector(".sidenav");
+
+// burgerIcon.addEventListener ("click", derouleBurger);
+
+// function derouleBurger () {
+//   sidenav.style.display = "block";
+//   }   
+
+burgerIcon.addEventListener ("click",derouleBurger);
+
+function derouleBurger () {
+  sidenav.classList.toggle("deroule-menu");
+}
+
 // NB ALEATOIRE : FONCTIONNEL (jusqu'à 19)
 let num = () => Math.floor(Math.random()* 20);
 // UTILISER LE CONSOLE.LOG SUIVANT POUR TESTER LA FONCTION PRECEDENTE :
@@ -32,6 +47,3 @@ const quote = [
 ];
 // UTILISER LE CONSOLE.LOG SUIVANT POUR TESTER LES FACTS EN ALEATOIRE :
 //console.log(quote[num()]);
-
-
-
