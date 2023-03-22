@@ -12,10 +12,10 @@ body {
 
 
 .navbar {
-    background: linear-gradient(to right, #1F4071, #C92A27);
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
+  background: linear-gradient(to right, #1F4071, #C92A27);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
 }
 
 .burger-icon {
@@ -35,16 +35,16 @@ body {
 }
 
 .sidenav {
-    position: fixed;
-    top: 0;
-    right: -100px;
-    width: 20vw;
-    height: 50%;
-    padding: 15px;
-    background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
-    border-radius: 15px 0px 0px 15px;
-    translate: -100px;
-    transition-duration: 0.5s;
+  position: fixed;
+  top: 0;
+  right: -100px;
+  width: 20vw;
+  height: 50%;
+  padding: 15px;
+  background: linear-gradient(270deg, #C92A27 0%, rgba(201, 42, 39, 0.75) 95.71%);
+  border-radius: 15px 0px 0px 15px;
+  translate: -100px;
+  transition-duration: 0.5s;
 }
 
 
@@ -61,15 +61,15 @@ body {
 
 .nav-link {
 
-    position: absolute;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    color: #FCFCFC;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #000000;
-    font-weight: bold;
-    text-shadow: #FCFCFC 1px 0 1px;
+  position: absolute;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  color: #FCFCFC;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-weight: bold;
+  text-shadow: #FCFCFC 1px 0 1px;
 }
 
 .nav-link::after {
@@ -87,10 +87,10 @@ body {
 
 .img-vache {
 
-    display: block;
-    width: 70%;
-    margin: auto;
-    margin-top: 50px;
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .banner {
@@ -100,34 +100,34 @@ body {
 
 
 .titre-principal {
-    font-family: 'Rye', cursive;
-    font-size: 7vw;
-    letter-spacing: 0.15rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+  font-family: 'Rye', cursive;
+  font-size: 7vw;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 
 }
 
 .Page1-titre-section {
-    font-family: 'Rye', cursive;
-    font-size: 4vw;
-    letter-spacing: 0.15rem;
-    display: block;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  font-family: 'Rye', cursive;
+  font-size: 4vw;
+  letter-spacing: 0.15rem;
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 
 .biographie {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    line-height: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  line-height: 1.5rem;
 }
 
 .portrait {
@@ -147,6 +147,15 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.fondTransp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(230, 228, 228, 0.4);
+  height: 100%;
+  width: 100%;
 }
 
 .toggle {
@@ -214,7 +223,7 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url("/ressources/image/walkOfFame.jpg");
+  background-image: url("/ressources/images/walkOfFame.jpg");
   background-size: 100% 400px;
   background-repeat: no-repeat;
   height: 640px;
@@ -227,11 +236,8 @@ button {
 }
 
 .slide:nth-child(4) p {
-  margin-top: 9%;
+  margin-top: 15%;
 }
-
-
-
 
 /* PAGES 4 & 5 + BOUTON BACK TO TOP + MEDIA QUERIES PAGES 4 & 5 */
 
