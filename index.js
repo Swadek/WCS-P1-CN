@@ -37,12 +37,12 @@ const quote = [
 "Un jour Chuck Norris a eu un zero en latin, depuis c'est une langue morte.",
 "L'avenir se demande parfois ce que Chuck Norris lui réserve.",
 "Hercule est un demi-dieu, Dieu est un demi-Chuck Norris",
-"Chuck Norris a gagné un tournoi de poker avec des cartes pokémon",
+"Chuck Norris a gagné un tournoi de poker avec des cartes pokémon.",
 "Moïse a coupé la mer en deux. Chuck Norris l'a recollé en disant 'tu refais ça, je te pète la gueule'.",
 "Quand il joue à qui veut gagner des millions, Chuck Norris peut prendre la vie du public.",
 "L'Odyssée d'Ulysse est fortement inspirée d'une promenade en pédalo de Chuck Norris.",
 "Chuck Norris ne cligne pas des yeux, ce sont ses paupières qui font des pompes.",
-"Chuck Norris a passé le mur du son en twingo",
+"Chuck Norris a passé le mur du son en twingo.",
 "Chuck Norris peut étrangler quelqu'un avec un telephone sans fil."
 ];
 // UTILISER LE CONSOLE.LOG SUIVANT POUR TESTER LES FACTS EN ALEATOIRE :
