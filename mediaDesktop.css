@@ -30,10 +30,27 @@
 
   .p01 {
     display: block;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    font-family: 'Rye', cursive;
+    font-size: 7vw;
+    color: #C92A27;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffffff
   }
+  
 
   .p02 {
     display: block;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-family: 'Rye', cursive;
+    font-size: 7vw;
+    color: #1F4071;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffffff
   }
 
 
