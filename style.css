@@ -449,6 +449,7 @@ button {
 }
 
 .page4>h2 {
+  text-decoration-line: underline overline;
   padding: 8vh 0 5vh 0;
   text-align: center;
   font-size: 1.8em;
@@ -519,14 +520,14 @@ button {
 }
 
 .another {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   background-color: darkred;
   color: white;
   border-radius: 80px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 
