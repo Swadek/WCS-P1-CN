@@ -14,7 +14,7 @@ function derouleBurger () {
 }
 
 // NB ALEATOIRE : FONCTIONNEL (jusqu'à 19)
-let num = () => Math.floor(Math.random()* 20);
+let num = () => Math.floor(Math.random()* quote.length);
 // UTILISER LE CONSOLE.LOG SUIVANT POUR TESTER LA FONCTION PRECEDENTE :
 //console.log(num());
 
@@ -37,13 +37,39 @@ const quote = [
 "Un jour Chuck Norris a eu un zero en latin, depuis c'est une langue morte.",
 "L'avenir se demande parfois ce que Chuck Norris lui réserve.",
 "Hercule est un demi-dieu, Dieu est un demi-Chuck Norris",
-"Chuck Norris a gagné un tournoi de poker avec des cartes pokémon",
+"Chuck Norris a gagné un tournoi de poker avec des cartes pokémon.",
 "Moïse a coupé la mer en deux. Chuck Norris l'a recollé en disant 'tu refais ça, je te pète la gueule'.",
 "Quand il joue à qui veut gagner des millions, Chuck Norris peut prendre la vie du public.",
 "L'Odyssée d'Ulysse est fortement inspirée d'une promenade en pédalo de Chuck Norris.",
 "Chuck Norris ne cligne pas des yeux, ce sont ses paupières qui font des pompes.",
-"Chuck Norris a passé le mur du son en twingo",
+"Chuck Norris a passé le mur du son en twingo.",
 "Chuck Norris peut étrangler quelqu'un avec un telephone sans fil."
 ];
 // UTILISER LE CONSOLE.LOG SUIVANT POUR TESTER LES FACTS EN ALEATOIRE :
 //console.log(quote[num()]);
+
+
+// BOUTON RANDOM FACTS
+// Appel de la classe bouton - des #id "Facts" 1, 2 & 3 :
+const another = document.querySelector('.another');
+const fact1 = document.querySelector('#facts1');
+const fact2 = document.querySelector('#facts2');
+const fact3 = document.querySelector('#facts3');
+
+// AddEventListener sur bouton :
+another.addEventListener('click', function() {
+// Création des variables "quote" pour stocker l'index et donc le Fact en question :
+  let quote1 = quote[num()];
+  let quote2 = quote[num()];
+  let quote3 = quote[num()];
+// Tant que les "quote" 1, 2 & 3 ont le même numéro d'index du tableau quote, on relance un numéro aléatoire :
+  while (quote1 === quote2 || quote1=== quote3 || quote2===quote3) {
+      quote1 = quote[num()];
+      quote2 = quote[num()];
+      quote3 = quote[num()];
+  }
+  // Modification de l'id "Facts" 1 à 3 dans le HTML :
+  fact1.innerHTML = quote1;
+  fact2.innerHTML = quote2;
+  fact3.innerHTML = quote3;
+})
