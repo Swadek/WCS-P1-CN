@@ -144,7 +144,6 @@ body {
   margin-top: 20px;
   border-top: 2px solid rgba(128, 128, 128, 0.288);
   overflow: hidden;
-  border-top: 2px solid rgba(128, 128, 128, 0.288);
 }
 
 .containerContenu {
@@ -169,7 +168,7 @@ body {
 }
 
 .textP2P3 {
-  margin: 15% 5% 0 5%;
+  padding: 20% 5% 0 5%;
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
   font-weight: bolder;
@@ -190,7 +189,7 @@ body {
 }
 
 .h2P2P3 {
-  margin: 7% 0 18% 0;
+  margin-top: 7%;
   font-family: "Poppins", sans-serif;
   text-shadow: #d8d6d6 1px 0 1px;
   font-size: 1em;
