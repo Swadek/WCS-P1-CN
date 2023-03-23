@@ -89,9 +89,9 @@ body {
 }
 
 .logoNavDesktop {
-  position: fixed;
-  left: 10px;
-  margin-top: 10px;
+  position: absolute;
+  left: 15px;
+  margin-top: 15px;
 }
 
 .navDesktop {
