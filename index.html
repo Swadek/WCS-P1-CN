@@ -18,6 +18,24 @@
 
 <!-- Page1 -->
 
+<!-- Barre de navigation pour le Desktop -->
+<nav class="navbarDesktop">
+    <img class="logoNavDesktop" src="./ressources/pictures/logo_chuck_white.png" width="40px" height="40px" />
+
+    <div class="navDesktop">
+        <ul class="buttonNavDesktop">
+            <li class="itemListDesktop"><a href="#accueil" class="nav-link-desktop">Accueil</a></li>
+            <li class="itemListDesktop"><a href="#star" class="nav-link-desktop">La star</a></li>
+            <li class="itemListDesktop"><a href="#homme" class="nav-link-desktop">L'homme</a></li>
+            <li class="itemListDesktop"><a href="#facts" class="nav-link-desktop">Fun facts</a></li>
+            <li class="itemListDesktop"><a href="#nabout" class="nav-link-desktop">Not about</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<!-- Barre de navigation pour le mobile -->
 <nav class="navbar">
     <img src="./ressources/images/logo_chuck_white.png" width="40px" height="40px" />
 
@@ -32,261 +50,279 @@
     <div class="sidenav">
 
         <ul class="burger-sub">
-            <li class="itemList"><a href="#" class="nav-link">Accueil</a></li>
-            <li class="itemList"><a href="#" class="nav-link">La star</a></li>
-            <li class="itemList"><a href="#" class="nav-link">L'homme</a></li>
-            <li class="itemList"><a href="#" class="nav-link">Fun facts</a></li>
-            <li class="itemList"><a href="#" class="nav-link">Not about</a></li>
+            <li class="itemList"><a href="#accueil" class="nav-link">Accueil</a></li>
+            <li class="itemList"><a href="#star" class="nav-link">La star</a></li>
+            <li class="itemList"><a href="#homme" class="nav-link">L'homme</a></li>
+            <li class="itemList"><a href="#facts" class="nav-link">Fun facts</a></li>
+            <li class="itemList"><a href="#nabout" class="nav-link">Not about</a></li>
         </ul>
+
         <img class="img-vache" src="ressources/images/Texas Longhorn.png" alt="crane de vache a cornes" ">
+
 
     </div>
 </nav>
 
+<!-- Header pour mobile et desktop -->
 <header>
+
     <img class=" banner" src="./ressources/images/banniere_desktop.jpg" alt="Chuck Norris devant le drapeau des USA">
-        </header>
+        
+    <p class="p01">CHUCK</p>
+    <p class="p02">NORRIS</p>
+</header>
 
-        <body>
+<body>
 
-            <!-- Bouton Back to Top -->
+    <!-- Bouton Back to Top -->
             <a href="#" class="backToTop" title="Go to top"><img src="/ressources/images/arrow_small.png"
                     alt="Arrow to Top"></a>
+                    
+ <!--  Page 1 à partir du titre principal-->
+    <section>
+        <h1 class="titre-principal"> CHUCK NORRIS</h1>
 
-            <!--  Page 1 à partir du titre principal-->
-            <section>
-                <h1 class="titre-principal"> CHUCK NORRIS</h1>
-                <div>
-                    <h2 class="Page1-titre-section"> Présentation </h2>
-                    <p class="biographie">
-                        Né le 10 mars 1940, Carlos Ray Norris, alias Chuck Norris, débute sa carrière d’acteur en 1972
-                        grâce à
-                        sa maitrise du karaté. Il enchaîne les rôles et celui dans la série Walker Texas Ranger le rend
-                        célèbre,
-                        jusqu’à rentrer dans la pop culture grâce aux aphorismes humoristiques.
+        <h2 class="Page1-titre-section" id="accueil"> Présentation </h2>
+
+        <div class="page1photo-text">
+            <p class="biographie">
+                Né le 10 mars 1940, Carlos Ray Norris, alias Chuck Norris, débute sa carrière d’acteur en 1972
+                grâce à
+                sa maitrise du karaté. Il enchaîne les rôles et celui dans la série Walker Texas Ranger le rend
+                célèbre,
+                jusqu’à rentrer dans la pop culture grâce aux aphorismes humoristiques.
+            </p>
+            <p class=" biographieDesktop">
+                Né de parents de souche indienne et irlandaise le 10 mars 1940, Chuck Norris, de son vrai nom Carlos Ray
+                Norris, apprend le karaté pendant son service militaire dans l'US Force en Corée du Sud. C'est cet art
+                martial et les nombreux prix qu'il remporte grâce à lui qui occasionnent sa rencontre avec Bruce Lee,
+                qui lui offre son premier rôle au cinéma dans son film La Fureur du dragon en 1972. S'ensuivent ensuite
+                plusieurs premiers rôles dans des films d'action ou d'arts martiaux, et des rôles dans des séries dont
+                Walker Texas Ranger qui est son plus grand succès dans les années 80-90. Sa dernière apparition en date
+                est dans la série télé Hawaii 5-0 en 2020.
+            </p>
+
+            <div class="divportrait">
+                <img class="photoportrait" src="./ressources/images/chuck_norris_cowboy.png"
+                    alt="Photo portrait de Chuck Norris">
+
+            </div>
+    
+        </div>
+    </section>
+    
+   <!-- Page2 -->
+    <section class="containerPage2">
+        <h1 class="h1StarMan">STAR</h1>
+        <ul class="toggle">
+            <li class="toggleLi">STAR</li>
+            <li class="toggleLi">MAN</li>
+        </ul>
+        <div class="containerContenu">
+            <div id="left">
+                <button class="arrowLeft"></button>
+                <!-- Flèche de gauche -->
+            </div>
+            <div id="right">
+                <button class="arrowRight"></button>
+                <!--Flèche de droite -->
+            </div>
+            <div class="slide">
+                <div class="fondTransp">
+                    <h1 class="h1P2P3">Arts martiaux</h1>
+                    <img class="slideImg" src="ressources\images\karate.png" alt="Chuck Norris karaté" />
+                    <h2 class="h2P2P3">Chuck Norris is a Martial Artist</h2>
+                    <p class="textP2P3">
+                        Chuck Norris est une légende des arts martiaux, ayant remporté de
+                        nombreux titres dans sa carrière, notamment six fois champion du
+                        monde de karaté. Il a développé sa propre méthode d'arts martiaux
+                        appelée le "Chun Kuk Do" et est connu pour sa maîtrise du
+                        Taekwondo et du Jiu-Jitsu brésilien.
                     </p>
                 </div>
-
-
-                <div class="portrait">
-                    <img src="./ressources/images/chuck_norris_cowboy.png" alt="Photo portrait de Chuck Norris"
-                        width="40%" , height="50%">
-                </div>
-            </section>
-
-            <!-- Page2 -->
-            <section class="containerPage2">
-                <h1 class="h1StarMan">STAR</h1>
-                <ul class="toggle">
-                    <li class="toggleLi">STAR</li>
-                    <li class="toggleLi">MAN</li>
-                </ul>
-                <div class="containerContenu">
-                    <div id="left">
-                        <button class="arrowLeft"></button>
-                        <!-- Flèche de gauche -->
-                    </div>
-                    <div id="right">
-                        <button class="arrowRight"></button>
-                        <!--Flèche de droite -->
-                    </div>
-                    <div class="slide">
-                        <div class="fondTransp">
-                            <h1 class="h1P2P3">Arts martiaux</h1>
-                            <img class="slideImg" src="ressources\images\karate.png" alt="Chuck Norris karaté" />
-                            <h2 class="h2P2P3">Chuck Norris is a Martial Artist</h2>
-                            <p class="textP2P3">
-                                Chuck Norris est une légende des arts martiaux, ayant remporté de
-                                nombreux titres dans sa carrière, notamment six fois champion du
-                                monde de karaté. Il a développé sa propre méthode d'arts martiaux
-                                appelée le "Chun Kuk Do" et est connu pour sa maîtrise du
-                                Taekwondo et du Jiu-Jitsu brésilien.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="fondTransp">
-                            <h1 class="h1P2P3">Séries</h1>
-                            <img class="slideImg" src="ressources\images\Serie.png" alt="Walker Texas Ranger" />
-                            <h2 class="h2P2P3">Chuck Norris as Cordell Walker in Walker Texas Ranger</h2>
-                            <p class="textP2P3">
-                                Walker Texas Ranger est une série télévisée d'action des années 90
-                                mettant en vedette Chuck Norris dans le rôle principal de Cordell
-                                Walker, un ranger du Texas. Norris incarne un personnage dur à
-                                cuire, expert en arts martiaux, qui traque les criminels et fait
-                                régner la justice dans les rues de Dallas. La série est devenue
-                                emblématique pour la personnalité charismatique et les scènes
-                                d'action impressionnantes de Chuck Norris.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="fondTransp">
-                            <h1 class="h1P2P3">Films</h1>
-                            <img class="slideImg" src="ressources\images\DeltaForce.jpg" alt="Delta Force" />
-                            <h2 class="h2P2P3">Chuck Norris as McCoy in Delta Force</h2>
-                            <p class="textP2P3">
-                                Chuck Norris est une icône du cinéma d'action, ayant joué dans de
-                                nombreux films populaires au cours de sa carrière. Il est connu
-                                pour ses rôles de héros d'action, souvent impliqué dans des scènes
-                                de combat à couper le souffle. Parmi ses films les plus célèbres
-                                figurent "Portés disparus", "Delta Force" et "Invasion USA".
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Page3 -->
-            <section class="containerPage3">
-                <h1 class="h1StarMan">MAN</h1>
-                <div class="containerContenu2">
-                    <div id="left2">
-                        <button class="arrowLeft2"></button>
-                        <!-- Flèche de gauche -->
-                    </div>
-                    <div id="right2">
-                        <button class="arrowRight2"></button>
-                        <!--Flèche de droite -->
-                    </div>
-                    <div class="slide2">
-                        <div class="fondTransp">
-                            <h1 class="h1P2P3">Armée</h1>
-                            <img src="ressources/images/armee.png" alt="Chuck Norris à l'armée" class="slideImg2" />
-                            <h2 class="h2P2P3">Chuck Norris is a soldier.</h2>
-                            <p class="textP2P3">
-                                Chuck Norris a rejoint l'armée américaine en 1958 et a été
-                                stationné en Corée du Sud en tant que membre de l'armée de l'air.
-                                Il a ensuite été affecté à la base aérienne de March en
-                                Californie, où il a commencé à s'intéresser aux arts martiaux.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide2">
-                        <div class="fondTransp">
-                            <h1 class="h1P2P3">Publicites</h1>
-                            <img src="ressources/images/gym.jpg" alt="Chuck Norris et les publicités"
-                                class="slideImg2" />
-                            <h2 class="h2P2P3">Chuck Norris, against all odds, is a MAN !</h2>
-                            <p class="textP2P3">
-                                Chuck Norris a été utilisé comme une figure de marketing dans de
-                                nombreuses campagnes publicitaires. Il a notamment été utilisé
-                                pour promouvoir des produits tels que des vêtements de sport, des
-                                équipements de fitness et des produits de soins personnels pour
-                                hommes. Son image a été associée à la force, à la virilité et à
-                                l'endurance, ce qui en fait un choix populaire pour les publicités
-                                axées sur la performance et le bien-être physique.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide2">
-                        <div class="fondTransp">
-                            <h1 class="h1P2P3">Association</h1>
-                            <img src="ressources/images/association.jpg" alt="Chuck Norris et ses associations"
-                                class="slideImg2" />
-                            <h2 class="h2P2P3">Chuck Norris is a mentor.</h2>
-                            <p class="textP2P3">
-                                Chuck Norris a créé plusieurs associations pour promouvoir les
-                                arts martiaux, aider les instructeurs à obtenir des
-                                certifications, et soutenir les enfants atteints de maladies
-                                terminales ainsi que les militaires en service. Parmi ces
-                                associations, on trouve "KickStart Kids", "United Fighting Arts
-                                Federation" (UFAF) et la "Chuck Norris Foundation".
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Page4 -->
-
-
-            <!-- FUN FACTS -->
-            <section class="page4">
-                <h2 class="title">FUN FACTS</h2>
-                <div class="containerGrid">
-                    <div class="containerFacts1">
-                        <div class="facts" id="facts1">
-                            <p>Le dernier homme à avoir serré la main de Chuck Norris est Jaime Lannister.</p>
-                        </div>
-                        <div class="facts" id="facts2">
-                            <p>Chuck Norris peut faire de la bière en brassant de l'air.</p>
-                        </div>
-                        <div class="facts" id="facts3">
-                            <p>Quand la tartine de Chuck Norris tombe, le beurre change de côté.</p>
-                        </div>
-                        <!-- Présence du bouton recharge Facts UNIQUEMENT en dessous du premier container ET SEULEMENT dispo sur la version mobile : min-width 960px -->
-                        <div class="button-random">
-                            <button class="another">Facts</br>Aléatoires</button>
-                        </div>
-                    </div>
-                    <div class="containerFacts2">
-                        <div class="facts" id="facts4">
-                            <p>Un jour, les PowerRangers ont rencontré Chuck Norris. Maintenant on les appelle les
-                                Télétubbies.
-                            </p>
-                        </div>
-                        <div class="facts" id="facts5">
-                            <p>Depuis que Chuck Norris a perdu son anneau, c’est le bordel en terre du milieu.</p>
-                        </div>
-                        <div class="facts" id="facts6">
-                            <p>Chuck Norris peut faire un habit avec un moine.</p>
-                        </div>
-                    </div>
-                    <div class="containerFacts3">
-                        <div class="facts" id="facts7">
-                            <p>Chuck Norris a frôlé la mort. Elle ne s’en est jamais remise.</p>
-                        </div>
-                        <div class="facts" id="facts8">
-                            <p>Chuck Norris est capable de laisser un message avant le bip sonore. </p>
-                        </div>
-                        <div class="facts" id="facts9">
-                            <p>Si Chuck Norris dort la lumière allumée, c’est parce que le noir a peur de lui.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="containerFooterPage4">
-                    <p>&copy;WCS P1 - Mars 2023</br>
-                    </br>
-                    <u>Développement:</u></br>
-                        Antoine JULIAN / Cédric PALACIO-VIDAL</br>
-                        Jérôme VILANOVA / Julien CAMPILLO</p>
-                    <div class="creditsPage4">
-                        <p>Aucun Wilders n'a été maltraité par Chuck Norris</br> durant le développement de ce projet.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CREDITS & SOURCES -->
-            <section class="page5">
-                <div class="page5-h2">
-                    <h2>NOT ABOUT CHUCK NORRIS</h2>
-                </div>
-                <div class="credits">
-                    <p>Ce projet à até réalisé sous la supervision bienveillante de la Wild Code School - Campus de
-                        Toulouse.
+            </div>
+            <div class="slide">
+                <div class="fondTransp">
+                    <h1 class="h1P2P3">Séries</h1>
+                    <img class="slideImg" src="ressources\images\Serie.png" alt="Walker Texas Ranger" />
+                    <h2 class="h2P2P3">Chuck Norris as Cordell Walker in Walker Texas Ranger</h2>
+                    <p class="textP2P3">
+                        Walker Texas Ranger est une série télévisée d'action des années 90
+                        mettant en vedette Chuck Norris dans le rôle principal de Cordell
+                        Walker, un ranger du Texas. Norris incarne un personnage dur à
+                        cuire, expert en arts martiaux, qui traque les criminels et fait
+                        régner la justice dans les rues de Dallas. La série est devenue
+                        emblématique pour la personnalité charismatique et les scènes
+                        d'action impressionnantes de Chuck Norris.
                     </p>
-                    <br>
-                    <p><u>Développement :</u></p>
-                    <ul>
-                        <li>Antoine JULIAN</li>
-                        <li>Cédric PALACIO-VIDAL</li>
-                        <li>Jérôme VILANOVA</li>
-                        <li>Julien CAMPILLO</li>
-                    </ul>
-                    <br>
-                    <p>Aucun Wilders n'a été maltraité par Chuck Norris durant le développement de ce projet.</p>
                 </div>
-                <div class="containerFooterPage5">
-                    <p>&copy;WCS P1 - Mars 2023</p>
+            </div>
+            <div class="slide">
+                <div class="fondTransp">
+                    <h1 class="h1P2P3">Films</h1>
+                    <img class="slideImg" src="ressources\images\DeltaForce.jpg" alt="Delta Force" />
+                    <h2 class="h2P2P3">Chuck Norris as McCoy in Delta Force</h2>
+                    <p class="textP2P3">
+                        Chuck Norris est une icône du cinéma d'action, ayant joué dans de
+                        nombreux films populaires au cours de sa carrière. Il est connu
+                        pour ses rôles de héros d'action, souvent impliqué dans des scènes
+                        de combat à couper le souffle. Parmi ses films les plus célèbres
+                        figurent "Portés disparus", "Delta Force" et "Invasion USA".
+                    </p>
                 </div>
-            </section>
-            <script src="index.js" type="module"></script>
-            <script src="indexPage3.js"></script>
-            <script src="slides.js"></script>
-            <script src="togglePage2.js"></script>
-        </body>
+            </div>
+        </div>
+    </section>
 
+
+    <!-- Page3 -->
+    <section class="containerPage3">
+        <h1 class="h1StarMan">MAN</h1>
+        <div class="containerContenu2">
+            <div id="left2">
+                <button class="arrowLeft2"></button>
+                <!-- Flèche de gauche -->
+            </div>
+            <div id="right2">
+                <button class="arrowRight2"></button>
+                <!--Flèche de droite -->
+            </div>
+            <div class="slide2">
+                <div class="fondTransp">
+                    <h1 class="h1P2P3">Armée</h1>
+                    <img src="ressources/images/armee.png" alt="Chuck Norris à l'armée" class="slideImg2" />
+                    <h2 class="h2P2P3">Chuck Norris is a soldier.</h2>
+                    <p class="textP2P3">
+                        Chuck Norris a rejoint l'armée américaine en 1958 et a été
+                        stationné en Corée du Sud en tant que membre de l'armée de l'air.
+                        Il a ensuite été affecté à la base aérienne de March en
+                        Californie, où il a commencé à s'intéresser aux arts martiaux.
+                    </p>
+                </div>
+            </div>
+            <div class="slide2">
+                <div class="fondTransp">
+                    <h1 class="h1P2P3">Publicites</h1>
+                    <img src="ressources/images/gym.jpg" alt="Chuck Norris et les publicités"
+                        class="slideImg2" />
+                    <h2 class="h2P2P3">Chuck Norris, against all odds, is a MAN !</h2>
+                    <p class="textP2P3">
+                        Chuck Norris a été utilisé comme une figure de marketing dans de
+                        nombreuses campagnes publicitaires. Il a notamment été utilisé
+                        pour promouvoir des produits tels que des vêtements de sport, des
+                        équipements de fitness et des produits de soins personnels pour
+                        hommes. Son image a été associée à la force, à la virilité et à
+                        l'endurance, ce qui en fait un choix populaire pour les publicités
+                        axées sur la performance et le bien-être physique.
+                    </p>
+                </div>
+            </div>
+            <div class="slide2">
+                <div class="fondTransp">
+                    <h1 class="h1P2P3">Association</h1>
+                    <img src="ressources/images/association.jpg" alt="Chuck Norris et ses associations"
+                        class="slideImg2" />
+                    <h2 class="h2P2P3">Chuck Norris is a mentor.</h2>
+                    <p class="textP2P3">
+                        Chuck Norris a créé plusieurs associations pour promouvoir les
+                        arts martiaux, aider les instructeurs à obtenir des
+                        certifications, et soutenir les enfants atteints de maladies
+                        terminales ainsi que les militaires en service. Parmi ces
+                        associations, on trouve "KickStart Kids", "United Fighting Arts
+                        Federation" (UFAF) et la "Chuck Norris Foundation".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page4 -->
+
+
+    <!-- FUN FACTS -->
+    <section class="page4">
+        <h2 class="title">FUN FACTS</h2>
+        <div class="containerGrid">
+            <div class="containerFacts1">
+                <div class="facts" id="facts1">
+                    <p>Le dernier homme à avoir serré la main de Chuck Norris est Jaime Lannister.</p>
+                </div>
+                <div class="facts" id="facts2">
+                    <p>Chuck Norris peut faire de la bière en brassant de l'air.</p>
+                </div>
+                <div class="facts" id="facts3">
+                    <p>Quand la tartine de Chuck Norris tombe, le beurre change de côté.</p>
+                </div>
+                <!-- Présence du bouton recharge Facts UNIQUEMENT en dessous du premier container ET SEULEMENT dispo sur la version mobile : min-width 960px -->
+                <div class="button-random">
+                    <button class="another">Facts</br>Aléatoires</button>
+                </div>
+            </div>
+            <div class="containerFacts2">
+                <div class="facts" id="facts4">
+                    <p>Un jour, les PowerRangers ont rencontré Chuck Norris. Maintenant on les appelle les
+                        Télétubbies.
+                    </p>
+                </div>
+                <div class="facts" id="facts5">
+                    <p>Depuis que Chuck Norris a perdu son anneau, c’est le bordel en terre du milieu.</p>
+                </div>
+                <div class="facts" id="facts6">
+                    <p>Chuck Norris peut faire un habit avec un moine.</p>
+                </div>
+            </div>
+            <div class="containerFacts3">
+                <div class="facts" id="facts7">
+                    <p>Chuck Norris a frôlé la mort. Elle ne s’en est jamais remise.</p>
+                </div>
+                <div class="facts" id="facts8">
+                    <p>Chuck Norris est capable de laisser un message avant le bip sonore. </p>
+                </div>
+                <div class="facts" id="facts9">
+                    <p>Si Chuck Norris dort la lumière allumée, c’est parce que le noir a peur de lui.</p>
+                </div>
+            </div>
+        </div>
+        <div class="containerFooterPage4">
+            <p>&copy;WCS P1 - Mars 2023</br>
+            </br>
+            <u>Développement:</u></br>
+                Antoine JULIAN / Cédric PALACIO-VIDAL</br>
+                Jérôme VILANOVA / Julien CAMPILLO</p>
+            <div class="creditsPage4">
+                <p>Aucun Wilders n'a été maltraité par Chuck Norris</br> durant le développement de ce projet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREDITS & SOURCES -->
+    <section class="page5">
+        <div class="page5-h2">
+            <h2>NOT ABOUT CHUCK NORRIS</h2>
+        </div>
+        <div class="credits">
+            <p>Ce projet à até réalisé sous la supervision bienveillante de la Wild Code School - Campus de
+                Toulouse.
+            </p>
+            <br>
+            <p><u>Développement :</u></p>
+            <ul>
+                <li>Antoine JULIAN</li>
+                <li>Cédric PALACIO-VIDAL</li>
+                <li>Jérôme VILANOVA</li>
+                <li>Julien CAMPILLO</li>
+            </ul>
+            <br>
+            <p>Aucun Wilders n'a été maltraité par Chuck Norris durant le développement de ce projet.</p>
+        </div>
+        <div class="containerFooterPage5">
+            <p>&copy;WCS P1 - Mars 2023</p>
+        </div>
+    </section>
+    <script src="index.js" type="module"></script>
+    <script src="indexPage3.js"></script>
+    <script src="slides.js"></script>
+    <script src="togglePage2.js"></script>
+</body>
 
 </html>

@@ -1,23 +1,78 @@
 @media screen and (min-width: 600px) {
   /* /////////    Mediaquerry desktop pages 2 et 3    ////////// */
 
-  .containerContenu {
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(#0d236f, #848484);
-  }
-  .containerContenu.red {
+
+/* page 1 */
+.burger-icon {
     display: none;
+}
+
+.burger-icon spanPage1 {
+    display: none;
+}
+
+.sidenav {
+    display: none;
+   
+}
+.navbar{
+    display: none;
+}
+
+.navbarDesktop{
+    display: block;
+}
+
+.titre-principal {
+display: none;
   }
-  .containerContenu.blue {
+.p01 {
     display: block;
   }
+  
+.p02 {
+    display:block;
+}
 
-  .slide {
-    display: inline-block;
-    justify-content: space-between;
+
+.page1photo-text{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 300px;
+    margin: 50px 50px 10px 10px;
+   
   }
+   
+ .divportrait{
+        display: flex;
+        justify-content: left;
+        width: 40%;
+       
+    
+}
+.photoportrait{
+    object-fit: contain;
+    width: 90%;
+    
+  } 
+  
+ .biographie {
+    display:none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+  }
+
+.biographieDesktop{
+    display:block;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+    width: 60%;
+    }
+
 
   /* Elément page 3 */
   .containerContenu2 {
@@ -280,3 +335,4 @@
     display: none;
   }
 }
+
