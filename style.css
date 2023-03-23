@@ -18,7 +18,6 @@ body {
   padding-left: 10px;
 }
 
-
 .burger-icon {
   position: fixed;
   right: 0px;
@@ -83,7 +82,7 @@ body {
 
 .navbarDesktop {
   position: fixed;
-  display:none;
+  display: none;
   z-index: 1;
   width: 100%;
   background: linear-gradient(to right, #1F4071, #C92A27);
@@ -140,7 +139,7 @@ a.nav-link-desktop {
 }
 
 .bannerDesktop {
-  
+
   width: 100%;
   max-height: auto;
   position: relative;
@@ -191,7 +190,7 @@ a.nav-link-desktop {
 }
 
 .page1photo-text {
-  
+
   display: flex;
   flex-direction: column;
   /* max-height: 350px; */
@@ -450,12 +449,19 @@ button {
 }
 
 .page4>h2 {
-  padding-top: 10vh;
+  text-decoration-line: underline overline;
+  padding: 8vh 0 5vh 0;
   text-align: center;
   font-size: 1.8em;
   font-family: "Rye", cursive;
-  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
-    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  text-shadow: 0.7px 0 #fff, -0.7px 0 #fff, 0 0.7px #fff, 0 -0.7px #fff, 0.7px 0.7px #fff,
+    -0.7px -0.7px #fff, 0.7px -0.7px #fff, -0.7px 0.7px #fff;
+}
+
+.factsBox {
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto 0 auto;
 }
 
 .containerFacts1 {
@@ -473,6 +479,7 @@ button {
 .facts {
   display: flex;
   align-items: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -482,11 +489,11 @@ button {
   font-size: 12px;
   line-height: 1.2pc;
   width: 80vw;
+  min-height: 60px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .facts p {
-  text-align: center;
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 1);
@@ -530,7 +537,6 @@ button {
   position: relative;
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
   background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
   background-attachment: fixed;
   background-position: center center;
@@ -543,12 +549,13 @@ button {
 /* Titre */
 
 .page5-h2 {
-  display: flex;
-  justify-content: center;
+  text-decoration-line: underline overline;
   text-align: center;
+  font-size: 1.8em;
+  margin: 50px 30px 30px 30px;
   font-family: "Rye", cursive;
-  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
-    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  text-shadow: 0.7px 0 #fff, -0.7px 0 #fff, 0 0.7px #fff, 0 -0.7px #fff, 0.7px 0.7px #fff,
+    -0.7px -0.7px #fff, 0.7px -0.7px #fff, -0.7px 0.7px #fff;
 }
 
 /* Crédits et Sources */
@@ -556,12 +563,11 @@ button {
 .credits {
   display: flex;
   flex-flow: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background: rgba(211, 211, 211, 0.7);
   border-radius: 5px;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
   font-size: 12px;
   line-height: 1.2pc;
   width: 80vw;
@@ -573,7 +579,7 @@ button {
   margin-bottom: 0;
   color: rgba(0, 0, 0, 1);
   font-family: "Poppins", sans-serif;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 /* Footer */
@@ -600,7 +606,7 @@ button {
 
 .backToTop {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 10px;
   z-index: 1;
   background-color: rgb(255, 255, 255);
