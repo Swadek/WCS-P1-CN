@@ -117,8 +117,8 @@
         padding-right: 20px;
     }
 }
-=======
-@media screen and (min-width: 960px) and (min-height: 925px) {
+
+@media screen and (min-width: 900px) and (min-height: 925px) {
   /* PAGE 4 : FUN FACTS UNIQUEMENT */
   /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
   .page4 {
@@ -229,5 +229,19 @@
   .creditsPage4 {
     display: block;
     padding-right: 10px;
+  }
+
+  /* DISPLAY NONE POUR PAGE 5 MOBILE > DESKTOP, BOUTON RANDOM FACTS & FOOTER PAGE 5 MOBILE > DESKTOP */
+
+  .containerFooterPage5 {
+    display: none;
+  }
+
+  .page5 {
+    display: none;
+  }
+
+  .button-random {
+    display: none;
   }
 }
