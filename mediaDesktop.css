@@ -1,8 +1,8 @@
 @media screen and (min-width: 600px) {
-  /* /////////    Mediaquerry desktop pages 2 et 3    ////////// */
+  /* /////////    Mediaquerry desktop   ////////// */
 
+  /*  /// CSS Page 1 \\\  */
 
-  /* page 1 */
   .burger-icon {
     display: none;
   }
@@ -15,13 +15,6 @@
     display: none;
 
   }
-
-  .containerPage3 {
-    margin-top: 0;
-    border-top: none;
-  }
-
-  /*.containerPage3 {}*/
 
   .navbar {
     display: none;
@@ -50,21 +43,17 @@
     align-items: center;
     height: 300px;
     margin: 50px 50px 10px 10px;
-
   }
 
   .divportrait {
     display: flex;
     justify-content: left;
     width: 40%;
-
-
   }
 
   .photoportrait {
     object-fit: contain;
     width: 90%;
-
   }
 
   .biographie {
@@ -83,6 +72,30 @@
     width: 60%;
   }
 
+  /*  /// CSS Pages 2 et 3 \\\  */
+
+
+  .containerContenu {
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#0d236f, #848484);
+  }
+
+  .containerPage3 {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  /*.containerPage3 {}*/
+
+  .containerContenu.red {
+    display: none;
+  }
+
+  .containerContenu.blue {
+    display: flex;
+  }
 
   /* Elément page 3 */
   .containerContenu2 {
