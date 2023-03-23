@@ -22,12 +22,23 @@
 
   .navbarDesktop {
     display: block;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(to right, #1F4071, #C92A27);
+    justify-content: center;
+    padding-left: 10px;
   }
 
   .titre-principal {
     display: none;
   }
 
+  .bannerDesktop {
+    width: 100%;
+    max-height: auto;
+    position: relative;
+    margin-top:68px;
+  }
   .p01 {
     display: block;
     position: absolute;
