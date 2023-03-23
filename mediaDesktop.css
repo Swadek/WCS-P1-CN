@@ -1,3 +1,152 @@
+@media screen and (min-width: 600px) {
+  /* /////////    Mediaquerry desktop pages 2 et 3    ////////// */
+
+  .containerContenu {
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#0d236f, #848484);
+  }
+  .containerContenu.red {
+    display: none;
+  }
+  .containerContenu.blue {
+    display: block;
+  }
+
+  .slide {
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  /* Elément page 3 */
+  .containerContenu2 {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#752220, #848484);
+  }
+
+  .containerContenu2.red {
+    display: block;
+  }
+  .containerContenu2.blue {
+    display: none;
+  }
+
+  .slide2 {
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  .toggle {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    font-family: "Rye", cursive;
+    font-size: 2em;
+    color: white;
+    height: 76px;
+    width: 100%;
+  }
+
+  .toggleLi {
+    height: 76px;
+    width: calc(100% / 2);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .toggleLi:nth-child(1) {
+    background: linear-gradient(#1f2271, #1f4071);
+  }
+
+  .toggleLi:nth-child(2) {
+    background: linear-gradient(#6f6f6f, #752220);
+  }
+
+  .slide {
+    background-image: none;
+    height: 100%;
+    width: calc(100% / 3);
+    overflow: hidden;
+  }
+
+  .slide2 {
+    background-image: none;
+    height: 100%;
+    width: calc(100% / 3);
+    overflow: hidden;
+  }
+
+  .slideImg {
+    object-fit: contain;
+    width: 32vw;
+    max-height: 25vh;
+    padding: 0 20% 0 20%;
+  }
+
+  .slideImg2 {
+    object-fit: contain;
+    width: 32vw;
+    max-height: 25vh;
+    padding: 0 20% 0 20%;
+  }
+
+  .h1StarMan {
+    display: none;
+  }
+
+  .textP2P3 {
+    margin: 0 4vw 0 4vw;
+  }
+
+  .fondTransp {
+    background-color: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide:nth-child(3) {
+    order: 3;
+  }
+
+  .slide:nth-child(4) p {
+    margin-top: 0;
+  }
+
+  .slide:nth-child(5) {
+    order: 3;
+  }
+
+  .slide2:nth-child(3) {
+    order: 3;
+  }
+
+  .slide2:nth-child(4) p {
+    margin-top: 0;
+  }
+
+  .slide2:nth-child(5) {
+    order: 3;
+  }
+
+  button {
+    display: none;
+  }
+
+  /* PAGE 5 : CREDITS ET SOURCES */
+
+  .page5 {
+    display: none;
+  }
+}
+
+
 @media screen and (min-width: 900px) and (min-height: 925px) {
 
     /* PAGE 4 : FUN FACTS UNIQUEMENT */
@@ -116,120 +265,6 @@
         display: block;
         padding-right: 20px;
     }
-}
-
-@media screen and (min-width: 900px) and (min-height: 925px) {
-  /* PAGE 4 : FUN FACTS UNIQUEMENT */
-  /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
-  .page4 {
-    position: relative;
-    background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .page4 > h2 {
-    margin-bottom: 0;
-  }
-
-  .containerFacts1 {
-    display: grid;
-    grid-template-rows: 80px 80px 80px;
-    grid-template-columns: 250px 250px 250px;
-    margin-bottom: 0;
-  }
-
-  .containerFacts2 {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-rows: 80px 80px 80px;
-    grid-template-columns: 250px 250px 250px;
-    margin-bottom: 0;
-  }
-
-  .containerFacts3 {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-rows: 80px 80px 80px;
-    grid-template-columns: 250px 250px 250px;
-    margin-bottom: 0;
-  }
-
-  .facts {
-    height: auto;
-    width: auto;
-    padding: 5px;
-    margin: 0;
-  }
-
-  .facts p {
-    display: flex;
-  }
-
-  #facts1,
-  #facts4,
-  #facts7 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  #facts2,
-  #facts5,
-  #facts8 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-bottom: 0;
-  }
-
-  #facts3,
-  #facts6,
-  #facts9 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin-bottom: 0;
-  }
-
-  .button {
-    display: none;
-  }
-
-  .backToTop {
-    display: none;
-  }
-
-  .containerFooterPage4 {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100vw;
-    bottom: 0;
-    padding: 10px;
-    position: absolute;
-    opacity: 0.8;
-    background: #f5cf95;
-  }
-
-  .containerFooterPage4 p {
-    color: rgba(0, 0, 0, 1);
-    margin: 0;
-    padding-left: 10px;
-    font-weight: bolder;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .creditsPage4 {
-    display: block;
-    padding-right: 10px;
-  }
 
   /* DISPLAY NONE POUR PAGE 5 MOBILE > DESKTOP, BOUTON RANDOM FACTS & FOOTER PAGE 5 MOBILE > DESKTOP */
 
