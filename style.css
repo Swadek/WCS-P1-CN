@@ -8,7 +8,6 @@ html {
 
 body {
   min-height: 100%;
-  overflow-x: hidden;
 }
 
 .navbar {
@@ -43,20 +42,20 @@ body {
   width: 30vw;
   height: 50%;
   padding: 15px;
-  background: linear-gradient(270deg,
-      #c92a27 0%,
-      rgba(201, 42, 39, 0.75) 95.71%);
+  background: linear-gradient(
+    270deg,
+    #c92a27 0%,
+    rgba(201, 42, 39, 0.75) 95.71%
+  );
   border-radius: 15px 0px 0px 15px;
   /* translate: -100px; */
   transition-duration: 0.5s;
-  z-index: 99;
 }
 
 .sidenav.deroule-menu {
   /* right: -250px; */
   translate: -120px;
   transition-duration: 0.5s;
-  z-index: 99;
 }
 
 .sidenav li {
@@ -74,8 +73,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #000000;
   font-weight: bold;
-  text-shadow: 0.7px 0 #fff, -0.7px 0 #fff, 0 0.7px #fff, 0 -0.7px #fff, 0.7px 0.7px #fff,
-    -0.7px -0.7px #fff, 0.7px -0.7px #fff, -0.7px 0.7px #fff;
+  text-shadow: #fcfcfc 1px 0 1px;
 }
 
 /* .nav-link::after {
@@ -146,9 +144,7 @@ body {
 
 .containerPage3 {
   margin-top: 20px;
-  border-top: 2px solid rgba(128, 128, 128, 0.288);
   overflow: hidden;
-  border-top: 2px solid rgba(128, 128, 128, 0.288);
 }
 
 .containerContenu {
@@ -292,7 +288,6 @@ button {
   background-repeat: no-repeat;
   height: 640px;
 }
-
 /* élément page 2 */
 .slide {
   display: none;
@@ -354,7 +349,7 @@ button {
   width: 100vw;
 }
 
-.page4>h2 {
+.page4 > h2 {
   display: flex;
   justify-content: center;
   padding: 5vh;
@@ -390,7 +385,7 @@ button {
   font-size: 12px;
   line-height: 1.2pc;
   width: 80vw;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.7);
 }
 
 .facts p {
@@ -405,11 +400,9 @@ button {
   margin-bottom: 250px;
 }
 
-#facts1,
-#facts2,
-#facts3 {
+#facts1, #facts2, #facts3 {
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .containerFooterPage4 {
@@ -429,11 +422,7 @@ button {
   background-color: darkred;
   color: white;
   border-radius: 80px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
 }
-
 
 /* Page 5 : Not About Chuck */
 
@@ -476,7 +465,7 @@ button {
   font-size: 12px;
   line-height: 1.2pc;
   width: 80vw;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.7);
 }
 
 .credits p {
@@ -496,7 +485,6 @@ button {
   margin-top: initial;
   opacity: 0.8;
   background: #f5cf95;
-  border-top: 2px solid rgba(19, 19, 19, 0.8);
 }
 
 .containerFooterPage5 p {
@@ -504,7 +492,7 @@ button {
   margin: 0;
   padding: 20px;
   font-weight: bolder;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rye", cursive;
 }
 
 /* Back To Top */
@@ -517,5 +505,129 @@ button {
   background-color: rgb(255, 255, 255);
   padding: 15px;
   border-radius: 70px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: rgba(32, 32, 32, 1);
+}
+
+/* MEDIA SCREEN DESKTOP */
+
+@media screen and (min-width: 600px) {
+  /* PAGE 5 : CREDITS ET SOURCES */
+
+  .page5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) and (min-height: 925px) {
+  /* PAGE 4 : FUN FACTS UNIQUEMENT */
+  /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
+  .page4 {
+    position: relative;
+    background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .page4 > h2 {
+    margin-bottom: 0;
+  }
+
+  .containerFacts1 {
+    display: grid;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 250px 250px 250px;
+    margin-bottom: 0;
+  }
+
+  .containerFacts2 {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 250px 250px 250px;
+    margin-bottom: 0;
+  }
+
+  .containerFacts3 {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 250px 250px 250px;
+    margin-bottom: 0;
+  }
+
+  .facts {
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .facts p {
+    display: flex;
+  }
+
+  #facts1,
+  #facts4,
+  #facts7 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #facts2,
+  #facts5,
+  #facts8 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-bottom: 0;
+  }
+
+  #facts3,
+  #facts6,
+  #facts9 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-bottom: 0;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .backToTop {
+    display: none;
+  }
+
+  .containerFooterPage4 {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100vw;
+    bottom: 0;
+    padding: 10px;
+    position: absolute;
+    opacity: 0.8;
+    background: #f5cf95;
+  }
+
+  .containerFooterPage4 p {
+    color: rgba(0, 0, 0, 1);
+    margin: 0;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .creditsPage4 {
+    display: block;
+    padding-right: 10px;
+  }
 }
