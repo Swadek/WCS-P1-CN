@@ -439,6 +439,7 @@ button {
   background: linear-gradient(135deg, #1f4071, #c92a27);
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* background-image: url("/ressources/images/separated_flag.png"); */
   /* background-repeat: no-repeat;
   background-attachment: fixed; */
@@ -449,10 +450,9 @@ button {
 }
 
 .page4>h2 {
-  display: flex;
-  justify-content: center;
-  padding: 5vh;
+  padding-top: 10vh;
   text-align: center;
+  font-size: 1.8em;
   font-family: "Rye", cursive;
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -472,14 +472,12 @@ button {
 
 .facts {
   display: flex;
-  flex-flow: column;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
   background: rgba(211, 211, 211, 0.7);
   border-radius: 5px;
-  justify-content: center;
-  align-items: center;
   padding: 5px;
   font-size: 12px;
   line-height: 1.2pc;
@@ -488,15 +486,12 @@ button {
 }
 
 .facts p {
+  text-align: center;
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 1);
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-}
-
-.facts:last-child {
-  margin-bottom: 250px;
 }
 
 #facts1,
