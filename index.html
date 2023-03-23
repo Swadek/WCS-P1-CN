@@ -20,16 +20,15 @@
 
 <!-- Barre de navigation pour le Desktop -->
 <nav class="navbarDesktop">
-    <img class="logoNavDesktop" id="accueil" src="./ressources/pictures/logo_chuck_white.png" width="40px"
-        height="40px" />
+    <img class="logoNavDesktop" src="./ressources/pictures/logo_chuck_white.png" width="40px" height="40px" />
 
     <div class="navDesktop">
         <ul class="buttonNavDesktop">
             <li class="itemListDesktop"><a href="#accueil" class="nav-link-desktop">Accueil</a></li>
-            <li class="itemListDesktop"><a href="#" class="nav-link-desktop">La star</a></li>
-            <li class="itemListDesktop"><a href="#" class="nav-link-desktop">L'homme</a></li>
-            <li class="itemListDesktop"><a href="#" class="nav-link-desktop">Fun facts</a></li>
-            <li class="itemListDesktop"><a href="#" class="nav-link-desktop">Not about</a></li>
+            <li class="itemListDesktop"><a href="#star" class="nav-link-desktop">La star</a></li>
+            <li class="itemListDesktop"><a href="#homme" class="nav-link-desktop">L'homme</a></li>
+            <li class="itemListDesktop"><a href="#facts" class="nav-link-desktop">Fun facts</a></li>
+            <li class="itemListDesktop"><a href="#nabout" class="nav-link-desktop">Not about</a></li>
         </ul>
     </div>
 
@@ -51,11 +50,11 @@
     <div class="sidenav">
 
         <ul class="burger-sub">
-            <li class="itemList"><a href="#logo-accueil" class="nav-link">Accueil</a></li>
-            <li class="itemList"><a href="#" class="nav-link">La star</a></li>
-            <li class="itemList"><a href="#" class="nav-link">L'homme</a></li>
-            <li class="itemList"><a href="#" class="nav-link">Fun facts</a></li>
-            <li class="itemList"><a href="#" class="nav-link">Not about</a></li>
+            <li class="itemList"><a href="#accueil" class="nav-link">Accueil</a></li>
+            <li class="itemList"><a href="#star" class="nav-link">La star</a></li>
+            <li class="itemList"><a href="#homme" class="nav-link">L'homme</a></li>
+            <li class="itemList"><a href="#facts" class="nav-link">Fun facts</a></li>
+            <li class="itemList"><a href="#nabout" class="nav-link">Not about</a></li>
         </ul>
         <img class="img-vache" src="ressources/pictures/Texas Longhorn.png" alt="crane de vache a cornes">
 
@@ -80,7 +79,7 @@
     <section>
         <h1 class="titre-principal"> CHUCK NORRIS</h1>
 
-        <h2 class="Page1-titre-section" id="Accueil"> Présentation </h2>
+        <h2 class="Page1-titre-section" id="accueil"> Présentation </h2>
 
         <div class="page1photo-text">
             <p class="biographie">
@@ -112,8 +111,8 @@
     <!-- Page2 -->
     <section class="containerPage2">
         <ul class="toggle">
-            <li class="toggleLi">STAR</li>
-            <li class="toggleLi">MAN</li>
+            <li class="toggleLi" id="star">STAR</li>
+            <li class="toggleLi" id="homme">HOMME</li>
         </ul>
         <div class="containerContenu">
             <div id="left">
@@ -237,7 +236,7 @@
 
     <!-- FUN FACTS -->
     <section class="page4">
-        <h2 class="title">FUN FACTS</h2>
+        <h2 class="title" id="facts">FUN FACTS</h2>
         <div class="containerGrid">
             <div class="containerFacts1">
                 <div class="facts" id="facts1">
@@ -330,7 +329,7 @@
 
     <!-- CREDITS & SOURCES -->
     <section class="page5">
-        <h2>NOT ABOUT CHUCK NORRIS</h2>
+        <h2 id="nabout">NOT ABOUT CHUCK NORRIS</h2>
         <div class="credits">
             <p>Ce projet à até réalisé sous la supervision bienveillante de la Wild Code School - Campus de Toulouse.
             </p>
