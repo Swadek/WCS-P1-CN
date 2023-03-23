@@ -10,6 +10,9 @@
   .containerContenu.red {
     display: none;
   }
+  .containerContenu.blue {
+    display: block;
+  }
 
   .slide {
     display: inline-block;
@@ -25,8 +28,11 @@
     background: linear-gradient(#752220, #848484);
   }
 
-  .containerContenu.blue {
+  .containerContenu2.red {
     display: block;
+  }
+  .containerContenu2.blue {
+    display: none;
   }
 
   .slide2 {

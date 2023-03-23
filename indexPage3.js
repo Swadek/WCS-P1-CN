@@ -36,6 +36,8 @@ function updateSlideDisplay() {
 // Mettre en surbrillance la première diapositive
 updateSlideDisplay();
 
+
+
 const slideContainer2 = document.querySelector('.containerContenu2');
 const slides2 = document.querySelectorAll('.slide2');
 const arrowLeft2 = document.querySelector('.arrowLeft2');
