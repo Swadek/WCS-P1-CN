@@ -117,7 +117,7 @@
     }
 }
 
-@media screen and (min-width: 960px) and (min-height: 925px) {
+@media screen and (min-width: 900px) and (min-height: 925px) {
 
     /* PAGE 4 : FUN FACTS UNIQUEMENT */
     /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
@@ -168,6 +168,8 @@
 
     .facts p {
         display: flex;
+        font-weight: bold;
+        font-size: 15px;
     }
 
     #facts1,
@@ -210,12 +212,14 @@
     .containerFooterPage4 {
         display: inline-flex;
         justify-content: space-between;
+        align-items: center;
         width: 100vw;
         bottom: 0;
         padding: 10px;
         position: absolute;
         opacity: 0.8;
         background: #f5cf95;
+        border-top: 2px solid rgba(19, 19, 19, 0.8);
     }
 
     .containerFooterPage4 p {
@@ -224,9 +228,11 @@
         padding-left: 10px;
         font-weight: bolder;
         font-family: "Poppins", sans-serif;
+        font-size: 18px;
     }
 
     .creditsPage4 {
         display: block;
-        padding-right: 10px;
+        padding-right: 20px;
     }
+}
