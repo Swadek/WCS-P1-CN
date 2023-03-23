@@ -224,12 +224,10 @@
   .page5 {
     display: none;
   }
-}
-
-@media screen and (min-width: 900px) and (min-height: 925px) {
 
   /* PAGE 4 : FUN FACTS UNIQUEMENT */
   /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
+
   .page4 {
     position: relative;
     background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
@@ -245,69 +243,45 @@
     margin-bottom: 0;
   }
 
+  .containerGrid {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 800px;
+    height: 45%;
+    margin: 5% auto auto auto;
+  }
+
   .containerFacts1 {
-    display: grid;
-    grid-template-rows: 80px 80px 80px;
-    grid-template-columns: 250px 250px 250px;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
   }
 
   .containerFacts2 {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-rows: 80px 80px 80px;
-    grid-template-columns: 250px 250px 250px;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
   }
 
   .containerFacts3 {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-rows: 80px 80px 80px;
-    grid-template-columns: 250px 250px 250px;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
   }
 
   .facts {
-    height: auto;
-    width: auto;
     padding: 5px;
-    margin: 0;
+    margin: 5px;
+    width: 200px;
   }
 
   .facts p {
-    display: flex;
     font-weight: bold;
-    font-size: 15px;
-  }
-
-  #facts1,
-  #facts4,
-  #facts7 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  #facts2,
-  #facts5,
-  #facts8 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-bottom: 0;
-  }
-
-  #facts3,
-  #facts6,
-  #facts9 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin-bottom: 0;
+    font-size: 1em;
   }
 
   .button {
