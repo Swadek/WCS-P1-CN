@@ -458,6 +458,13 @@ button {
     -0.7px -0.7px #fff, 0.7px -0.7px #fff, -0.7px 0.7px #fff;
 }
 
+.FactButtonBox {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
 .factsBox {
   display: flex;
   flex-direction: column;
@@ -489,7 +496,7 @@ button {
   font-size: 12px;
   line-height: 1.2pc;
   width: 80vw;
-  min-height: 60px;
+  min-height: 100px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
