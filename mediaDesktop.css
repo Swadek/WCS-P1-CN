@@ -271,8 +271,9 @@
     width: 100vw;
   }
 
-  .page4 > h2 {
+  .page4>h2 {
     margin-bottom: 0;
+    padding: 7vh 0 0 0;
   }
 
   .FactButtonBox {

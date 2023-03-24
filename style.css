@@ -450,7 +450,7 @@ button {
 
 .page4>h2 {
   text-decoration-line: underline overline;
-  padding: 8vh 0 5vh 0;
+  padding: 8vh 0 0 0;
   text-align: center;
   font-size: 1.8em;
   font-family: "Rye", cursive;
@@ -489,7 +489,7 @@ button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background: rgba(211, 211, 211, 0.7);
   border-radius: 5px;
   padding: 5px;
@@ -549,7 +549,7 @@ button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  max-height: 550px;
   width: 100vw;
 }
 
