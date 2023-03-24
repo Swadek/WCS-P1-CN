@@ -143,6 +143,13 @@
     display: none;
   }
 
+  #left,
+  #right,
+  #left2,
+  #right2 {
+    display: none;
+  }
+
   .toggle {
     margin: 0;
     padding: 0;
@@ -244,10 +251,6 @@
     order: 3;
   }
 
-  button {
-    display: none;
-  }
-
   /* PAGE 5 : CREDITS ET SOURCES */
 
   .page5 {
@@ -272,12 +275,16 @@
     margin-bottom: 0;
   }
 
+  .FactButtonBox {
+    flex-direction: row;
+  }
+
   .factsBox {
     width: 100vw;
     max-width: 800px;
     height: 45%;
     margin: 1% auto auto auto;
-    padding-bottom: 350px;
+    padding-bottom: 65px;
   }
 
   .containerFacts1 {
@@ -312,8 +319,11 @@
     font-size: 1em;
   }
 
-  .button {
-    display: none;
+  .button-random {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    max-height: 500px;
   }
 
   .backToTop {
@@ -357,7 +367,4 @@
     display: none;
   }
 
-  .button-random {
-    display: none;
-  }
 }
