@@ -377,5 +377,6 @@
 
   .page5 {
     display: none;
+    background-image: url("./ressources/images/chuck-norris-dessin-dos.png");
   }
 }
