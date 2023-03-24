@@ -510,7 +510,13 @@ button {
 
 #facts1,
 #facts2,
-#facts3 {
+#facts3,
+#facts4,
+#facts5,
+#facts6,
+#facts7,
+#facts8,
+#facts9 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
