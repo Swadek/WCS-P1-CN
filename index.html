@@ -18,6 +18,22 @@
 
 <!-- Page1 -->
 
+<!-- Barre de navigation pour le Desktop -->
+<nav class="navbarDesktop">
+    <img class="logoNavDesktop" src="./ressources/images/logo_chuck_white.png" width="40px" height="40px" />
+
+    <div class="navDesktop">
+        <ul class="buttonNavDesktop">
+            <li class="itemListDesktop"><a href="#" class="nav-link-desktop">Accueil</a></li>
+            <li class="itemListDesktop"><a href="#goPage2" class="nav-link-desktop">La star / L'homme</a></li>
+            <li class="itemListDesktop"><a href="#factsMD" class="nav-link-desktop">Fun facts</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+<!-- Barre de navigation pour le mobile -->
 <nav class="navbar">
     <img src="./ressources/images/logo_chuck_white.png" width="40px" height="40px" />
 
@@ -32,19 +48,27 @@
     <div class="sidenav">
 
         <ul class="burger-sub">
-            <li class="itemList"><a href="#" class="nav-link">Accueil</a></li>
-            <li class="itemList"><a href="#" class="nav-link">La star</a></li>
-            <li class="itemList"><a href="#" class="nav-link">L'homme</a></li>
-            <li class="itemList"><a href="#" class="nav-link">Fun facts</a></li>
-            <li class="itemList"><a href="#" class="nav-link">Not about</a></li>
+            <li class="itemList"><a href="#accueil" class="nav-link">Accueil</a></li>
+            <li class="itemList"><a href="#starM" class="nav-link">La star</a></li>
+            <li class="itemList"><a href="#hommeM" class="nav-link">L'homme</a></li>
+            <li class="itemList"><a href="#factsMD" class="nav-link">Fun facts</a></li>
+            <li class="itemList"><a href="#nabout" class="nav-link">Not about</a></li>
         </ul>
+
         <img class="img-vache" src="ressources/images/Texas Longhorn.png" alt="crane de vache a cornes" ">
+
 
     </div>
 </nav>
 
-<header>
-    <img class=" banner" src="./ressources/images/banniere_desktop.jpg" alt="Chuck Norris devant le drapeau des USA">
+<!-- Header pour mobile et desktop -->
+    <header>
+
+        <img class=" bannerDesktop" src="./ressources/images/banniere_desktop.jpg"
+            alt="Chuck Norris devant le drapeau des USA">
+
+        <p class="p01">CHUCK</p>
+        <p class="p02">NORRIS</p>
         </header>
 
         <body>
@@ -54,10 +78,12 @@
                     alt="Arrow to Top"></a>
 
             <!--  Page 1 à partir du titre principal-->
-            <section>
+            <section class="sectionpage1">
                 <h1 class="titre-principal"> CHUCK NORRIS</h1>
-                <div>
-                    <h2 class="Page1-titre-section"> Présentation </h2>
+
+                <h2 class="Page1-titre-section" id="accueil"> Présentation </h2>
+
+                <div class="page1photo-text">
                     <p class="biographie">
                         Né le 10 mars 1940, Carlos Ray Norris, alias Chuck Norris, débute sa carrière d’acteur en 1972
                         grâce à
@@ -65,21 +91,37 @@
                         célèbre,
                         jusqu’à rentrer dans la pop culture grâce aux aphorismes humoristiques.
                     </p>
-                </div>
+                    <p class=" biographieDesktop"  id="goPage2">
+                        Né de parents de souche indienne et irlandaise le 10 mars 1940, Chuck Norris, de son vrai nom
+                        Carlos Ray
+                        Norris, apprend le karaté pendant son service militaire dans l'US Force en Corée du Sud. C'est
+                        cet art
+                        martial et les nombreux prix qu'il remporte grâce à lui qui occasionnent sa rencontre avec Bruce
+                        Lee,
+                        qui lui offre son premier rôle au cinéma dans son film La Fureur du dragon en 1972. S'ensuivent
+                        ensuite
+                        plusieurs premiers rôles dans des films d'action ou d'arts martiaux, et des rôles dans des
+                        séries dont
+                        Walker Texas Ranger qui est son plus grand succès dans les années 80-90. Sa dernière apparition
+                        en date
+                        est dans la série télé Hawaii 5-0 en 2020.
+                    </p>
 
+                    <div class="divportrait">
+                        <img class="photoportrait" src="./ressources/images/chuck_norris_cowboy.png"
+                            alt="Photo portrait de Chuck Norris">
 
-                <div class="portrait">
-                    <img src="./ressources/images/chuck_norris_cowboy.png" alt="Photo portrait de Chuck Norris"
-                        width="40%" , height="50%">
+                    </div>
+
                 </div>
             </section>
 
             <!-- Page2 -->
             <section class="containerPage2">
-                <h1 class="h1StarMan">STAR</h1>
+                <h1 class="h1StarMan" id="starM">STAR</h1>
                 <ul class="toggle">
-                    <li class="toggleLi">STAR</li>
-                    <li class="toggleLi">MAN</li>
+                    <li class="toggleLi" id="starD">STAR</li>
+                    <li class="toggleLi" id="hommeD">MAN</li>
                 </ul>
                 <div class="containerContenu">
                     <div id="left">
@@ -140,7 +182,7 @@
 
             <!-- Page3 -->
             <section class="containerPage3">
-                <h1 class="h1StarMan">MAN</h1>
+                <h1 class="h1StarMan" id="hommeM">MAN</h1>
                 <div class="containerContenu2">
                     <div id="left2">
                         <button class="arrowLeft2"></button>
@@ -166,7 +208,7 @@
                     <div class="slide2">
                         <div class="fondTransp">
                             <h1 class="h1P2P3">Publicites</h1>
-                            <img src="ressources/images/publicites.jpg" alt="Chuck Norris et les publicités"
+                            <img src="ressources/images/gym.jpg" alt="Chuck Norris et les publicités"
                                 class="slideImg2" />
                             <h2 class="h2P2P3">Chuck Norris, against all odds, is a MAN !</h2>
                             <p class="textP2P3">
@@ -204,89 +246,93 @@
 
             <!-- FUN FACTS -->
             <section class="page4">
-                <h2 class="title">FUN FACTS</h2>
-                <div class="containerGrid">
-                    <div class="containerFacts1">
-                        <div class="facts" id="facts1">
-                            <p>Le dernier homme à avoir serré la main de Chuck Norris est Jaime Lannister.</p>
+                <h2 class="title" id="factsMD">FUN FACTS</h2>
+                <div class="FactButtonBox ">
+                    <div class="factsBox">
+                        <div class="containerFacts1">
+                            <div class="facts" id="facts1">
+                                <p>Le dernier homme à avoir serré la main de Chuck Norris est Jaime Lannister.</p>
+                            </div>
+                            <div class="facts" id="facts2">
+                                <p>Chuck Norris peut faire de la bière en brassant de l'air.</p>
+                            </div>
+                            <div class="facts" id="facts3">
+                                <p>Quand la tartine de Chuck Norris tombe, le beurre change de côté.</p>
+                            </div>
+                            <!-- Présence du bouton recharge Facts UNIQUEMENT en dessous du premier container ET SEULEMENT dispo sur la version mobile : min-width 960px -->
                         </div>
-                        <div class="facts" id="facts2">
-                            <p>Chuck Norris peut faire de la bière en brassant de l'air.</p>
+                        <div class="containerFacts2">
+                            <div class="facts" id="facts4">
+                                <p>Un jour, les PowerRangers ont rencontré Chuck Norris. Maintenant on les appelle les
+                                    Télétubbies.
+                                </p>
+                            </div>
+                            <div class="facts" id="facts5">
+                                <p>Depuis que Chuck Norris a perdu son anneau, c’est le bordel en terre du milieu.</p>
+                            </div>
+                            <div class="facts" id="facts6">
+                                <p>Chuck Norris peut faire un habit avec un moine.</p>
+                            </div>
                         </div>
-                        <div class="facts" id="facts3">
-                            <p>Quand la tartine de Chuck Norris tombe, le beurre change de côté.</p>
-                        </div>
-                        <!-- Présence du bouton recharge Facts UNIQUEMENT en dessous du premier container ET SEULEMENT dispo sur la version mobile : min-width 960px -->
-                        <div class="button-random">
-                            <button class="another">Facts</br>Aléatoires</button>
+                        <div class="containerFacts3">
+                            <div class="facts" id="facts7">
+                                <p>Chuck Norris a frôlé la mort. Elle ne s’en est jamais remise.</p>
+                            </div>
+                            <div class="facts" id="facts8">
+                                <p>Chuck Norris est capable de laisser un message avant le bip sonore. </p>
+                            </div>
+                            <div class="facts" id="facts9">
+                                <p>Si Chuck Norris dort la lumière allumée, c’est parce que le noir a peur de lui.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="containerFacts2">
-                        <div class="facts" id="facts4">
-                            <p>Un jour, les PowerRangers ont rencontré Chuck Norris. Maintenant on les appelle les
-                                Télétubbies.
-                            </p>
-                        </div>
-                        <div class="facts" id="facts5">
-                            <p>Depuis que Chuck Norris a perdu son anneau, c’est le bordel en terre du milieu.</p>
-                        </div>
-                        <div class="facts" id="facts6">
-                            <p>Chuck Norris peut faire un habit avec un moine.</p>
-                        </div>
-                    </div>
-                    <div class="containerFacts3">
-                        <div class="facts" id="facts7">
-                            <p>Chuck Norris a frôlé la mort. Elle ne s’en est jamais remise.</p>
-                        </div>
-                        <div class="facts" id="facts8">
-                            <p>Chuck Norris est capable de laisser un message avant le bip sonore. </p>
-                        </div>
-                        <div class="facts" id="facts9">
-                            <p>Si Chuck Norris dort la lumière allumée, c’est parce que le noir a peur de lui.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="containerFooterPage4">
-                    <p>&copy;WCS P1 - Mars 2023</br>
-                    </br>
-                    <u>Développement:</u></br>
-                        Antoine JULIAN / Cédric PALACIO-VIDAL</br>
-                        Jérôme VILANOVA / Julien CAMPILLO</p>
-                    <div class="creditsPage4">
-                        <p>Aucun Wilders n'a été maltraité par Chuck Norris</br> durant le développement de ce projet.</p>
+                    <div class="button-random">
+                        <button class="another">Facts</br>Aléatoires</button>
                     </div>
                 </div>
-            </section>
+    </div>
+    <div class="containerFooterPage4">
+        <p>&copy;WCS P1 - Mars 2023</br>
+            </br>
+            <u>Développement:</u></br>
+            Antoine JULIAN / Cédric PALACIO-VIDAL</br>
+            Jérôme VILANOVA / Julien CAMPILLO
+        </p>
+        <div class="creditsPage4">
+            <p>Aucun Wilders n'a été maltraité par Chuck Norris</br> durant le développement de ce
+                projet.
+            </p>
+        </div>
+    </div>
+    </section>
 
-            <!-- CREDITS & SOURCES -->
-            <section class="page5">
-                <div class="page5-h2">
-                    <h2>NOT ABOUT CHUCK NORRIS</h2>
-                </div>
-                <div class="credits">
-                    <p>Ce projet à até réalisé sous la supervision bienveillante de la Wild Code School - Campus de
-                        Toulouse.
-                    </p>
-                    <br>
-                    <p><u>Développement :</u></p>
-                    <ul>
-                        <li>Antoine JULIAN</li>
-                        <li>Cédric PALACIO-VIDAL</li>
-                        <li>Jérôme VILANOVA</li>
-                        <li>Julien CAMPILLO</li>
-                    </ul>
-                    <br>
-                    <p>Aucun Wilders n'a été maltraité par Chuck Norris durant le développement de ce projet.</p>
-                </div>
-                <div class="containerFooterPage5">
-                    <p>&copy;WCS P1 - Mars 2023</p>
-                </div>
-            </section>
-            <script src="index.js" type="module"></script>
-            <script src="indexPage3.js"></script>
-            <script src="slides.js"></script>
-            <script src="togglePage2.js"></script>
-        </body>
-
+    <!-- CREDITS & SOURCES -->
+    <section class="page5">
+        <div class="page5-h2">
+            <h2 id="nabout">NOT ABOUT CHUCK NORRIS</h2>
+        </div>
+        <div class="credits">
+            <p>Ce projet à até réalisé sous la supervision bienveillante de la Wild Code School - Campus de
+                Toulouse.
+            </p>
+            <br>
+            <p><u>Développement :</u></p>
+            <ul>
+                <li>Antoine JULIAN</li>
+                <li>Cédric PALACIO-VIDAL</li>
+                <li>Jérôme VILANOVA</li>
+                <li>Julien CAMPILLO</li>
+            </ul>
+            <br>
+            <p>Aucun Wilders n'a été maltraité par Chuck Norris durant le développement de ce projet.</p>
+        </div>
+        <div class="containerFooterPage5">
+            <p>&copy;WCS P1 - Mars 2023</p>
+        </div>
+    </section>
+    <script src="index.js" type="module"></script>
+    <script src="indexPage3.js"></script>
+    <script src="togglePage2.js"></script>
+    </body>
 
 </html>

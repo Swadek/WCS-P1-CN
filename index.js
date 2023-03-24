@@ -4,8 +4,16 @@ const sidenav = document.querySelector(".sidenav");
 
 
 
-// // BOUTON RANDOM FACTS
-// // Appel de la classe bouton - des #id "Facts":
+burgerIcon.addEventListener("click", derouleBurger);
+
+function derouleBurger() {
+  sidenav.classList.toggle("deroule-menu");
+}
+
+
+// BOUTON RANDOM FACTS
+// Appel de la classe bouton - des #id "Facts" 1, 2 & 3 :
+
 const another = document.querySelector('.another');
 
 const fact1 = document.querySelector('#facts1');
@@ -17,6 +25,7 @@ const fact6 = document.querySelector('#facts6');
 const fact7 = document.querySelector('#facts7');
 const fact8 = document.querySelector('#facts8');
 const fact9 = document.querySelector('#facts9');
+
 
 
 
@@ -92,7 +101,17 @@ another.addEventListener('click', function() {
       num7 = quote3[random3()];
       num8 = quote3[random3()];
       num9 = quote3[random3()];
-  }
+      
+      
+// Changement de couleur bouton Random
+// setTimeout(() => {
+//   another.addEventListener('click', function () {
+//     another.style.background = "#000000";
+//     console.log("Delayed for 1 second.");
+//   });
+// }, "2 second");
+
+
   
 //   // Modification de l'id "Facts" 1 à 3 dans le HTML :
   fact1.innerHTML = num1;

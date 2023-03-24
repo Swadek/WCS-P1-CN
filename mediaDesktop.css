@@ -1,5 +1,104 @@
 @media screen and (min-width: 600px) {
-  /* /////////    Mediaquerry desktop pages 2 et 3    ////////// */
+  /* /////////    Mediaquerry desktop   ////////// */
+
+  /*  /// CSS Page 1 \\\  */
+
+  .burger-icon {
+    display: none;
+  }
+
+  .burger-icon spanPage1 {
+    display: none;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbarDesktop {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(to right, #1f4071, #c92a27);
+    justify-content: center;
+    padding-left: 10px;
+  }
+
+  .titre-principal {
+    display: none;
+  }
+
+  .bannerDesktop {
+    width: 100%;
+    max-height: auto;
+    position: relative;
+    margin-top: 68px;
+  }
+
+  .p01 {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    font-family: "Rye", cursive;
+    font-size: 7vw;
+    color: #c92a27;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffffff;
+  }
+
+  .p02 {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-family: "Rye", cursive;
+    font-size: 7vw;
+    color: #1f4071;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffffff;
+  }
+
+  .page1photo-text {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 300px;
+    margin: 50px 50px 10px 10px;
+  }
+
+  .divportrait {
+    display: flex;
+    justify-content: left;
+    width: 40%;
+  }
+
+  .photoportrait {
+    object-fit: contain;
+    width: 90%;
+  }
+
+  .biographie {
+    display: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+  }
+
+  .biographieDesktop {
+    display: block;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+    width: 60%;
+  }
+
+  /*  /// CSS Pages 2 et 3 \\\  */
 
   .containerContenu {
     flex-direction: row;
@@ -7,16 +106,20 @@
     height: 100vh;
     background: linear-gradient(#0d236f, #848484);
   }
+
+  .containerPage3 {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  /*.containerPage3 {}*/
+
   .containerContenu.red {
     display: none;
   }
-  .containerContenu.blue {
-    display: block;
-  }
 
-  .slide {
-    display: inline-block;
-    justify-content: space-between;
+  .containerContenu.blue {
+    display: flex;
   }
 
   /* Elément page 3 */
@@ -29,15 +132,18 @@
   }
 
   .containerContenu2.red {
-    display: block;
+    display: flex;
   }
+
   .containerContenu2.blue {
     display: none;
   }
 
-  .slide2 {
-    display: inline-block;
-    justify-content: space-between;
+  #left,
+  #right,
+  #left2,
+  #right2 {
+    display: none;
   }
 
   .toggle {
@@ -61,6 +167,10 @@
     justify-content: center;
   }
 
+  .toggleLi:hover {
+    border: 3px solid rgb(238, 233, 233);
+  }
+
   .toggleLi:nth-child(1) {
     background: linear-gradient(#1f2271, #1f4071);
   }
@@ -70,6 +180,8 @@
   }
 
   .slide {
+    display: flex;
+    flex-direction: row;
     background-image: none;
     height: 100%;
     width: calc(100% / 3);
@@ -77,6 +189,8 @@
   }
 
   .slide2 {
+    display: flex;
+    flex-direction: row;
     background-image: none;
     height: 100%;
     width: calc(100% / 3);
@@ -85,15 +199,17 @@
 
   .slideImg {
     object-fit: contain;
-    width: 32vw;
-    max-height: 25vh;
+    width: 100%;
+    height: AUTO;
+    max-height: 200px;
     padding: 0 20% 0 20%;
   }
 
   .slideImg2 {
     object-fit: contain;
-    width: 32vw;
-    max-height: 25vh;
+    width: 100%;
+    height: AUTO;
+    max-height: 200px;
     padding: 0 20% 0 20%;
   }
 
@@ -102,7 +218,7 @@
   }
 
   .textP2P3 {
-    margin: 0 4vw 0 4vw;
+    padding: 5% 15% 0 15%;
   }
 
   .fondTransp {
@@ -135,136 +251,122 @@
     order: 3;
   }
 
-  button {
-    display: none;
-  }
-
   /* PAGE 5 : CREDITS ET SOURCES */
 
   .page5 {
     display: none;
   }
-}
 
+  /* PAGE 4 : FUN FACTS UNIQUEMENT */
+  /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
 
-@media screen and (min-width: 900px) and (min-height: 925px) {
+  .page4 {
+    position: relative;
+    background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
 
-    /* PAGE 4 : FUN FACTS UNIQUEMENT */
-    /* MEDIA QUERY SPECIFIQUE CAR USAGE DE GRILLE POUR LES FACTS - A MODIFIER SI POSSIBLE */
-    .page4 {
-        position: relative;
-        background-image: url("/ressources/images/chuck-norris-dessin-dos.png");
-        background-attachment: fixed;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-    }
+  .page4 > h2 {
+    margin-bottom: 0;
+  }
 
-    .page4>h2 {
-        margin-bottom: 0;
-    }
+  .FactButtonBox {
+    flex-direction: row;
+  }
 
-    .containerFacts1 {
-        display: grid;
-        grid-template-rows: 80px 80px 80px;
-        grid-template-columns: 250px 250px 250px;
-        margin-bottom: 0;
-    }
+  .factsBox {
+    width: 100vw;
+    max-width: 800px;
+    height: 45%;
+    margin: 1% auto auto auto;
+    padding-bottom: 65px;
+  }
 
-    .containerFacts2 {
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-rows: 80px 80px 80px;
-        grid-template-columns: 250px 250px 250px;
-        margin-bottom: 0;
-    }
+  .containerFacts1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
+  }
 
-    .containerFacts3 {
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-rows: 80px 80px 80px;
-        grid-template-columns: 250px 250px 250px;
-        margin-bottom: 0;
-    }
+  .containerFacts2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+  }
 
-    .facts {
-        height: auto;
-        width: auto;
-        padding: 5px;
-        margin: 0;
-    }
+  .containerFacts3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+  }
 
-    .facts p {
-        display: flex;
-        font-weight: bold;
-        font-size: 15px;
-    }
+  .facts {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
 
-    #facts1,
-    #facts4,
-    #facts7 {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
+  .facts p {
+    font-weight: bold;
+    font-size: 1em;
+  }
 
-    #facts2,
-    #facts5,
-    #facts8 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        margin-bottom: 0;
-    }
+  .button-random {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    max-height: 550px;
+    min-width: 10vw;
+  }
 
-    #facts3,
-    #facts6,
-    #facts9 {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        margin-bottom: 0;
-    }
+  .another {
+    border: 1px solid #eee;
+    height: 125px;
+    width: 125px;
+  }
 
-    .button {
-        display: none;
-    }
+  .another:hover {
+    border: 2px solid rgba(128, 128, 128, 0.834);
+  }
 
-    .backToTop {
-        display: none;
-    }
+  .backToTop {
+    display: none;
+  }
 
-    .containerFooterPage4 {
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-        bottom: 0;
-        padding: 10px;
-        position: absolute;
-        opacity: 0.8;
-        background: #f5cf95;
-        border-top: 2px solid rgba(19, 19, 19, 0.8);
-    }
+  .containerFooterPage4 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+    background: #f5cf95;
+    border-top: 2px solid rgba(19, 19, 19, 0.8);
+  }
 
-    .containerFooterPage4 p {
-        color: rgba(0, 0, 0, 1);
-        margin: 0;
-        padding-left: 10px;
-        font-weight: bolder;
-        font-family: "Poppins", sans-serif;
-        font-size: 18px;
-    }
+  .containerFooterPage4 p {
+    color: rgba(0, 0, 0, 1);
+    margin: 0;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+  }
 
-    .creditsPage4 {
-        display: block;
-        padding-right: 20px;
-    }
+  .creditsPage4 {
+    display: block;
+    padding-right: 20px;
+  }
 
   /* DISPLAY NONE POUR PAGE 5 MOBILE > DESKTOP, BOUTON RANDOM FACTS & FOOTER PAGE 5 MOBILE > DESKTOP */
 
@@ -273,10 +375,6 @@
   }
 
   .page5 {
-    display: none;
-  }
-
-  .button-random {
     display: none;
   }
 }
