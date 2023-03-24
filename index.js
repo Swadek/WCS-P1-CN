@@ -98,8 +98,9 @@ another.addEventListener('click', function() {
       num7 = quote3[random3()];
       num8 = quote3[random3()];
       num9 = quote3[random3()];
+
     }
-      
+    
 // Changement de couleur bouton Random
 // setTimeout(() => {
 //   another.addEventListener('click', function () {
@@ -120,3 +121,4 @@ another.addEventListener('click', function() {
   fact7.innerHTML = num7;
   fact8.innerHTML = num8;
   fact9.innerHTML = num9;
+})
