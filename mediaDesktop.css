@@ -13,7 +13,6 @@
 
   .sidenav {
     display: none;
-
   }
 
   .navbar {
@@ -24,7 +23,7 @@
     display: block;
     position: fixed;
     z-index: 1;
-    background: linear-gradient(to right, #1F4071, #C92A27);
+    background: linear-gradient(to right, #1f4071, #c92a27);
     justify-content: center;
     padding-left: 10px;
   }
@@ -45,26 +44,24 @@
     position: absolute;
     top: 20%;
     left: 8%;
-    font-family: 'Rye', cursive;
+    font-family: "Rye", cursive;
     font-size: 7vw;
-    color: #C92A27;
+    color: #c92a27;
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffffff
+    -webkit-text-stroke-color: #ffffff;
   }
-
 
   .p02 {
     display: block;
     position: absolute;
     top: 20%;
     right: 5%;
-    font-family: 'Rye', cursive;
+    font-family: "Rye", cursive;
     font-size: 7vw;
-    color: #1F4071;
+    color: #1f4071;
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffffff
+    -webkit-text-stroke-color: #ffffff;
   }
-
 
   .page1photo-text {
     display: flex;
@@ -87,7 +84,7 @@
 
   .biographie {
     display: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 2rem;
   }
@@ -95,14 +92,13 @@
   .biographieDesktop {
     display: block;
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 1.5rem;
     width: 60%;
   }
 
   /*  /// CSS Pages 2 et 3 \\\  */
-
 
   .containerContenu {
     flex-direction: row;
@@ -271,7 +267,7 @@
     width: 100vw;
   }
 
-  .page4>h2 {
+  .page4 > h2 {
     margin-bottom: 0;
   }
 
@@ -336,7 +332,7 @@
     align-items: center;
     bottom: 0;
     padding: 10px;
-    position: relative;
+    position: absolute;
     width: 100%;
     opacity: 0.8;
     background: #f5cf95;
@@ -366,5 +362,4 @@
   .page5 {
     display: none;
   }
-
 }
